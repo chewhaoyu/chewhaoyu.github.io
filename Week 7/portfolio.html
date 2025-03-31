@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>portfolio</title>
+    <style>
+        #container {
+            max-width: 1280px;
+            margin: auto;
+            background-color: #74c69d;
+            padding: 20px;
+        }
+
+        #logo-image img {
+            width: 100px;
+        }
+
+        #nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        #nav-menu {
+            display: flex;
+            gap: 20px;
+            color: white;
+        }
+
+        #portfolio {
+            max-width: 1280px;
+            padding: 20px;
+            text-align: center;
+            margin: auto;
+        }
+
+        #portfolio h3 {
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: #74c69d;
+            font-weight: bold;
+        }
+
+        #portfolio h2 {
+            font-size: 36px;
+            margin: 10px;
+        }
+
+        #portfolio-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #portfolio-text span {
+            font-size: 20px;
+            display: flex;
+            margin: 5px;
+        }
+
+        #img-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 100%;
+            max-width: 1280px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .portfolio-item {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        #learn-button {
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 15px;
+            padding: 12px 30px;
+            margin: 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            align-items: center;
+        }
+
+        #footer-container {
+            max-width: 1280px;
+            background-color: #74c69d;
+            padding: 20px;
+            margin: auto;
+        }
+
+        #footer-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        .footer-icon {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        #footer-text {
+            color: white;
+            text-align: right;
+        }
+
+        @media only screen and (max-width: 780px) {
+            #nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+
+            #portfolio h2 {
+                font-size: 28px;
+            }
+
+            #portfolio-text span {
+                font-size: 16px;
+            }
+
+            #img-grid {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+
+            .portfolio-item {
+                width: 100%;
+            }
+
+            #learn-button {
+                font-size: 20px;
+            }
+
+            #footer-info {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-icon {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            #footer-text {
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+    </style>
+
+<body>
+    <div id="container">
+        <div id="nav">
+            <div id="logo-image"><img src="image/logo.png"></div>
+            <div id="nav-menu">
+                <div>Home</div>
+                <div>Portfolio</div>
+                <div>Services</div>
+                <div>Contact</div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <h3>WORKS</h3>
+        <h2>Portfolio</h2>
+        <div id="portfolio-text">
+            <span>Lorem ipsum, dolor sit amet consectetur</span>
+            <span>adipisicing elit.</span>
+        </div>
+        <div id="img-grid">
+            <div class="portfolio-item"><img src="image/landing.png" alt="Landing Page"></div>
+            <div class="portfolio-item"><img src="image/web.png" alt="Web Design"></div>
+            <div class="portfolio-item"><img src="image/rocket.png" alt="Rocket Business"></div>
+            <div class="portfolio-item"><img src="image/shopping.png" alt="Shopping"></div>
+            <div class="portfolio-item"><img src="image/shapes.png" alt="Geometric Shapes"></div>
+            <div class="portfolio-item"><img src="image/trick.png" alt="Trick or Treat"></div>
+            <div class="portfolio-item"><img src="image/halloween.png" alt="Halloween"></div>
+            <div class="portfolio-item"><img src="image/virtual.png" alt="VR Experience"></div>
+        </div>
+        <button id="learn-button">Learn More</button>
+    </div>
+    <div id="footer-container">
+        <div id="footer-info">
+            <div class="footer-icon">
+                <div><img src="image/facebookicon.png"></div>
+                <div><img src="image/instagramicon.png"></div>
+                <div><img src="image/twittericon.png"></div>
+                <div><img src="image/pinteresticon.png"></div>
+                <div><img src="image/tiktokicon.png"></div>
+                <div><img src="image/whatsappicon.png"></div>
+                <div><img src="image/youtubeicon.png"></div>
+            </div>
+            <div id="footer-text">
+                <div>© Start, 2022. All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</head>
+
+</html>
