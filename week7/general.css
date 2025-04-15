@@ -1,0 +1,25 @@
+h1,
+h2,
+h4,
+h6 {
+    font-family: 'Crimson Text', serif;
+}
+
+h3,
+h5,
+p {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+#nav-menu {
+    display: flex;
+    gap: 20px;
+    color: white;
+}

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <style>
+        h1 h2 h4 h6 {
+            font-family: 'Crimson Text', serif;
+        }
+
+        h3 h5 p {
+            font-family: 'Red Hat Display', sans-serif;
+        }
+
+        #container {
+            max-width: 1280px;
+            margin: auto;
+            background-color: #74c69d;
+            padding: 20px;
+        }
+
+        #logo-image img {
+            width: 100px;
+        }
+
+        #nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        #nav-menu {
+            display: flex;
+            gap: 20px;
+            color: white;
+        }
+
+        #banner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 40px;
+        }
+
+        #banner-text {
+            width: 45%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        #banner-text h5 {
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        #banner-text h1 {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+
+        #banner-text p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        #banner-image {
+            width: 55%;
+        }
+
+        #banner-text .banner-content {
+            align-items: flex-start;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            max-width: 350px;
+        }
+
+        #explore-button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 12px 50px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Red Hat Display', sans-serif;
+            font-weight: bold;
+        }
+
+        #partners {
+            max-width: 1280px;
+            padding: 20px;
+            text-align: center;
+            margin: auto;
+        }
+
+        #partners h3 {
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: #74c69d;
+            font-weight: bold;
+            font-family: 'Red Hat Display', sans-serif;
+        }
+
+        #partners-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: medium;
+        }
+
+        #partners-text span {
+            display: block;
+            margin: 5px;
+        }
+
+        #partners-logos {
+            display: flex;
+            justify-content: space-between;
+            margin: 50px;
+            align-items: flex-start;
+        }
+
+        #learn-button {
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 15px;
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Red Hat Display', sans-serif;
+            font-weight: bold;
+        }
+
+        #content-container {
+            max-width: 1280px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        #content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: auto;
+            padding: 20px;
+            gap: 55px;
+        }
+
+        #content-text {
+            width: 45%;
+            text-align: left;
+        }
+
+        #content-text .head {
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        #content-image {
+            width: 45%;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+
+        .text {
+            align-items: flex-start;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+        }
+
+        .text span {
+            display: block;
+        }
+
+        .text-paragraph {
+            font-size: 16px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        #content-button {
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 15px;
+            padding: 12px 30px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Red Hat Display', sans-serif;
+            font-weight: bold;
+        }
+
+        #info-container {
+            max-width: 1280px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        #info {
+            max-width: 1280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            padding: 20px;
+            gap: 40px;
+        }
+
+        #info-text {
+            align-items: flex-start;
+            width: 45%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        #info-image {
+            width: 55%;
+        }
+
+        #info-text .head {
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        #info-text .info-paragraph {
+            font-size: 16px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        #info-text span {
+            display: block;
+        }
+
+        #info-text .info-content {
+            align-items: flex-start;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            max-width: 1280px;
+        }
+
+        #info-button {
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 15px;
+            padding: 12px 30px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #team-container {
+            max-width: 1280px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        #team {
+            text-align: center;
+        }
+
+
+        #team-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #team-text h3 {
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: #74c69d;
+            font-weight: bold;
+        }
+
+        #team-text h2 {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        #team-paragrapgh {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #team-paragrapgh span {
+            display: block;
+        }
+
+        .team-grid {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .team-card {
+            background-color: white;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            margin: auto;
+        }
+
+        .team-card img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        #view-button {
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 15px;
+            padding: 12px 30px;
+            margin: 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Red Hat Display', sans-serif;
+            font-weight: bold;
+        }
+
+        #footer-container {
+            max-width: 1280px;
+            background-color: #74c69d;
+            padding: 20px;
+            margin: auto;
+        }
+
+        #footer-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        .footer-icon {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        #footer-text {
+            color: white;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="nav">
+            <div id="logo-image"><img src="image/logo.png"></div>
+            <div id="nav-menu">
+                <div>Home</div>
+                <div>Portfolio</div>
+                <div>Services</div>
+                <div>Contact</div>
+            </div>
+        </div>
+
+        <div id="banner">
+            <div id="banner-text">
+                <div class="banner-content">
+                    <h5>WELCOME</h5>
+                    <h1>Lorem ipsum dolor sit amet consectetur </h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor
+                        aperiam
+                        nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+                    <button id="explore-button">Explore</button>
+                </div>
+            </div>
+            <div id="banner-image">
+                <img src="image/Group.png" width="100%">
+            </div>
+        </div>
+    </div>
+
+    <div id="partners">
+        <h3>PARTNERS</h3>
+        <h2>Lorem Ipsum Dolor</h2>
+        <div id="partners-text">
+            <span>Lorem ipsum, dolor sit amet consectetur</span>
+            <span>adipisicing elit.</span>
+        </div>
+        <div id="partners-logos">
+            <img src="image/google.png">
+            <img src="image/microsoft.png">
+            <img src="image/airbnb.png">
+            <img src="image/facebook.png">
+            <img src="image/spotify.png">
+        </div>
+        <button id="learn-button">Learn More</button>
+    </div>
+
+    <div id="content-container">
+        <div id="content">
+            <div id="content-image">
+                <img src="image/content1.png" width="100%">
+            </div>
+            <div id="content-text">
+                <div class="text">
+                    <div class="head">
+                        <span>Lorem ipsum dolor sit</span>
+                        <span>amet consectetur</span>
+                    </div>
+                    <div class="text-paragraph">
+                        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+                        <span>nemo hic quos, ab, dolor aperiam nobis cum est eos</span>
+                        <span>error ipsum, voluptate culpa nesciunt delectus iste?</span>
+                    </div>
+                    <button id="content-button">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="info-container">
+        <div id="info">
+            <div id="info-text">
+                <div class="info-content">
+                    <div class="head">
+                        <span>Lorem ipsum dolor sit</span>
+                        <span>amet consectetur</span>
+                    </div>
+                    <div class="info-paragraph">
+                        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+                        <span>nemo hic quos, ab, dolor aperiam nobis cum est eos</span>
+                        <span>error ipsum, voluptate culpa nesciunt delectus iste?</span>
+                    </div>
+                </div>
+                <button id="info-button">Learn More</button>
+            </div>
+            <div id="info-image">
+                <img src="image/info.png" width="100%">
+            </div>
+        </div>
+    </div>
+
+    <div id="team-container">
+        <div id="team">
+            <div id="team-text">
+                <h3>TEAM</h3>
+                <h2>Our Talents</h2>
+                <div id="team-paragrapgh">
+                    <span>Lorem ipsum, dolor sit amet consectetur</span>
+                    <span>Suscipit nemo hic quos, ab,</span>
+                </div>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="image/peg.png">
+                    <h4>Peg Legge</h4>
+                    <p>CEO</p>
+                </div>
+                <div class="team-card">
+                    <img src="image/richard.png">
+                    <h4>Richard Guerra</h4>
+                    <p>CTO</p>
+                </div>
+                <div class="team-card">
+                    <img src="image/alexandra.png">
+                    <h4>Alexandra Stolz</h4>
+                    <p>Designer</p>
+                </div>
+                <div class="team-card">
+                    <img src="image/janet.png">
+                    <h4>Janet Bray</h4>
+                    <p>Developer</p>
+                </div>
+            </div>
+            <button id="view-button">View Team</button>
+        </div>
+    </div>
+
+    <div id="footer-container">
+        <div id="footer-info">
+            <div class="footer-icon">
+                <div><img src="image/facebookicon.png"></div>
+                <div><img src="image/instagramicon.png"></div>
+                <div><img src="image/twittericon.png"></div>
+                <div><img src="image/pinteresticon.png"></div>
+                <div><img src="image/tiktokicon.png"></div>
+                <div><img src="image/whatsappicon.png"></div>
+                <div><img src="image/youtubeicon.png"></div>
+            </div>
+            <div id="footer-text">
+                <div>© Start, 2022. All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

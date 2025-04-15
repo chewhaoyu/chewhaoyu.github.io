@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HY:Fashion Styling Tips</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="general.css">
+</head>
+
+<body class="container">
+    <style>
+        body {
+            background-color: #F8F5F0;
+            font-family: playfair display, serif;
+            margin: 0;
+        }
+
+
+        #logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        #hero {
+            text-align: center;
+            background-size: cover;
+        }
+
+        #hero-text {
+            font-family: "Playfair Display", serif;
+            font-size: 7vw;
+            font-style: italic;
+            font-weight: 400;
+            margin-bottom: 40px;
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 1;
+
+        }
+
+        #hero-text #here {
+            position: relative;
+            left: 20%;
+        }
+
+        #hero-text #style {
+            position: relative;
+            left: 70%;
+
+        }
+
+        #hero-text span {
+            display: inline-block;
+        }
+
+        #hero-image {
+            position: relative;
+            width: 100%;
+            height: 90vh;
+            object-fit: cover;
+        }
+
+        #slogan {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            font-family: "Playfair Display", serif;
+            font-style: italic;
+            text-align: center;
+            padding-top: 60px;
+            margin-bottom: 100px;
+        }
+
+        #slogan span {
+            position: absolute;
+        }
+
+        #dress,
+        #your,
+        #ape,
+        #ine,
+        #confidence {
+            font-size: 60px;
+        }
+
+        #sh {
+            font-size: 150px;
+            left: 10%;
+        }
+
+        #dress {
+            color: black;
+            top: 20%;
+            left: 34%;
+        }
+
+        #your {
+            color: black;
+            top: 38%;
+            left: 34%;
+        }
+
+        #sh {
+            color: black;
+            top: 31%;
+            left: 44%;
+        }
+
+        #ape {
+            color: black;
+            top: 38%;
+            left: 54%;
+        }
+
+        #ine {
+            color: black;
+            top: 58%;
+            left: 54%;
+        }
+
+        #confidence {
+            color: black;
+            top: 77%;
+            left: 43%;
+        }
+
+        #firstexclamation,
+        #secondexclamation {
+            font-size: 500px;
+            color: rgba(163, 171, 148, 0.3);
+        }
+
+        #firstexclamation {
+            top: 0px;
+            left: 15%;
+        }
+
+        #secondexclamation {
+            right: 15%;
+            top: 0px;
+        }
+
+        #rectangle-frame {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #B5A58D;
+            padding: 80px;
+            position: relative;
+            height: auto;
+            overflow: hidden;
+        }
+
+        #frame-text {
+            flex: 1;
+            max-width: 40%;
+            color: #000000;
+            font-family: 'Playfair Display', serif;
+            margin-top: 60px;
+        }
+
+        .slogantext {
+            font-size: 54px;
+            font-style: italic;
+            margin-bottom: 16px;
+        }
+
+        #frame-text h3.theme {
+            font-weight: bold;
+            font-size: 25px;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        #frame-text .title .slogantext {
+            display: block;
+        }
+
+        #frame-text .description {
+            font-size: 16px;
+            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
+
+            margin: 0;
+        }
+
+        #learn-more {
+            margin-top: 40px;
+            padding: 12px 60px;
+            background-color: #5A4E3C;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+
+        #frame-images {
+            max-width: 60%;
+            display: flex;
+            flex: 1;
+            height: auto;
+            justify-content: flex-end;
+        }
+
+        #frame-images img {
+            max-width: 70%;
+            object-fit: contain;
+        }
+
+        #oval-frame {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #B5A58D;
+            padding: 80px;
+            position: relative;
+            height: auto;
+            overflow: hidden;
+        }
+
+        #frame2-text {
+            flex: 1;
+            max-width: 40%;
+            color: #000000;
+            font-family: 'Playfair Display', serif;
+            margin-top: 60px;
+            text-align: right;
+        }
+
+        #frame2-text .title .slogantext {
+            display: block;
+        }
+
+        .slogantext {
+            font-size: 54px;
+            font-style: italic;
+            margin-bottom: 16px;
+        }
+
+        #frame2-text h3.theme {
+            font-weight: bold;
+            font-size: 25px;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        #frame2-text .description {
+            font-size: 16px;
+            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+
+        #learn-more2 {
+            margin-top: 40px;
+            padding: 12px 60px;
+            background-color: #5A4E3C;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+
+        #frame2-images {
+            max-width: 60%;
+            display: flex;
+            flex: 1;
+            height: auto
+        }
+
+        #frame2-images img {
+            max-width: 70%;
+            object-fit: contain;
+        }
+
+        #trapezoid-frame {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #B5A58D;
+            padding: 80px;
+            position: relative;
+            height: auto;
+            overflow: hidden;
+        }
+
+        #frame3-text {
+            flex: 1;
+            max-width: 40%;
+            color: #000000;
+            font-family: 'Playfair Display', serif;
+            margin-top: 60px;
+        }
+
+        .slogantext {
+            font-size: 54px;
+            font-style: italic;
+            margin-bottom: 16px;
+        }
+
+        #frame3-text h3.theme {
+            font-weight: bold;
+            font-size: 25px;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        #frame3-text .title .slogantext {
+            display: block;
+        }
+
+        #frame3-text .description {
+            font-size: 16px;
+            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
+
+            margin: 0;
+        }
+
+        #learn-more3 {
+            margin-top: 40px;
+            padding: 12px 60px;
+            background-color: #5A4E3C;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+
+        #frame3-images {
+            max-width: 60%;
+            display: flex;
+            flex: 1;
+            height: auto;
+            justify-content: flex-end;
+        }
+
+        #frame3-images img {
+            max-width: 70%;
+            object-fit: contain;
+        }
+
+        #identify {
+            position: relative;
+            background-color: #f8f5f0;
+            padding: 100px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        #backgroundtext {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 35vw;
+            color: rgba(0, 0, 0, 0.05);
+            white-space: nowrap;
+            z-index: 0;
+            pointer-events: none;
+            user-select: none;
+            font-family: "Neue Haas Grotesk", sans-serif;
+        }
+
+        #identify-text {
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: flex-start;
+            z-index: 1;
+            flex-wrap: wrap;
+        }
+
+        #small-heading {
+            font-size: 30px;
+            margin-bottom: 0px;
+            font-family: "Neue Haas Grotesk", sans-serif;
+            font-weight: bold;
+        }
+
+        #main-heading {
+            font-size: 60px;
+            margin-bottom: 30px;
+            margin-top: 0px;
+            font-family: "Neue Haas Grotesk", sans-serif;
+        }
+
+        #identify-button {
+            background-color: #725A3E;
+            color: white;
+            font-size: 16px;
+            padding: 12px 35px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+
+    <div id="nav">
+        <div id="logo">HY</div>
+        <div id="nav-menu">
+            <div>Identify Your Body</div>
+            <div>Rectangular</div>
+            <div>Oval</div>
+            <div>Trapezoid</div>
+        </div>
+    </div>
+    <div id="hero">
+        <h1 id="hero-text">
+            <span id="here">Here ,</span>
+            <span id="style">You Style</span>
+        </h1>
+        <img id="hero-image" src="images/herobanner.jpg" alt="banner" />
+    </div>
+
+    <div id="slogan">
+        <span id="firstexclamation">!</span>
+        <span id="dress">Dress for</span>
+        <span id="your">Your</span>
+        <span id="sh">Sh</span>
+        <span id="ape">ape,</span>
+        <span id="ine">ine with</span>
+        <span id="confidence">Confidence</span>
+        <span id="secondexclamation">!</span>
+    </div>
+
+    <div id="rectangle-frame">
+        <div id="frame-text">
+            <div class="slogantext">
+                <span>Rectangle Frame,</span>
+                <span>Infinite Style.</span>
+            </div>
+            <h3 class="theme">Modern Minimalist Elegance</h3>
+            <p class="description">
+                This outfit exudes elegance and sophistication with a monochromatic white ensemble. The tailored blazer
+                adds structure, while the textured knit top underneath introduces subtle contrast. The straight-leg
+                trousers maintain a clean silhouette, and the black leather boots anchor the look, adding a refined
+                edge. Perfect for formal events or a polished everyday statement.
+            </p>
+            <button id="learn-more">Learn More</button>
+        </div>
+
+        <div id="frame-images">
+            <img id="bg1" src="images/main1.png" alt="Background Model" />
+        </div>
+    </div>
+
+    <div id="oval-frame">
+        <div id="frame2-images">
+            <img id="bg2" src="images/main2.png" alt="Background Mode2" />
+        </div>
+        <div id="frame2-text">
+            <div class="slogantext">
+                <span>Oval Style,</span>
+                <span>Maximum Impact.</span>
+            </div>
+            <h3 class="theme">
+                Casual Streetwear</h3>
+            <p class="description">
+                This outfit blends casual and smart elements effortlessly. The light-wash denim jacket adds a relaxed
+                touch, contrasting with the sleek black turtleneck for a refined look. The slim-fit dark trousers
+                elongate the silhouette, while the tan platform shoes introduce a pop of warmth and modern flair.
+                Finished with a simple pendant necklace, this outfit is perfect for a stylish yet comfortable day out.
+            </p>
+            <button id="learn-more2">Learn More</button>
+        </div>
+    </div>
+
+    <div id="trapezoid-frame">
+        <div id="frame3-text">
+            <div class="slogantext">
+                <span>Trapezoid Vibes, </span>
+                <span>Unstoppable Looks.</span>
+            </div>
+            <h3 class="theme">
+                Urban Tactical Streetwear</h3>
+            <p class="description">
+                This outfit blends utility and streetwear elements for a rugged yet stylish look. The olive-green
+                military-style jacket adds a structured, adventurous feel, complemented by the casual black hoodie
+                underneath. The tapered joggers provide comfort while keeping the silhouette sleek. Paired with black
+                and gray Nike sneakers, this look is perfect for an effortlessly cool urban aesthetic. The smartwatch
+                adds a modern tech-savvy touch.
+            </p>
+            <button id="learn-more3">Learn More</button>
+        </div>
+        <div id="frame3-images">
+            <img id="bg3" src="images/main3.png" alt="Background Mode3" />
+        </div>
+    </div>
+
+    <div id="identify">
+        <div id="backgroundtext">??????</div>
+        <div id="identify-text">
+            <div class="content-block">
+                <p id="small-heading">Curious Whats Your Body Shape?</p>
+            </div>
+            <div class="content-block">
+                <h2 id="main-heading">Identify Your Body Shape</h2>
+            </div>
+            <div class="content-block">
+                <button id="identify-button">Identity</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="left">HY</div>
+        <div class="center">Back To Top ↑</div>
+    </footer>
+</body>
+
+</html>

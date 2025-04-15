@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header {
+            background-color: #205781;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        #social-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        #social-links img {
+            width: 24px;
+            height: 24px;
+        }
+
+        #container {
+            background-color: #98D2C0;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #profile-image {
+            margin-top: 40px;
+        }
+
+        #profile-image img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        #content {
+            margin-top: 20px;
+        }
+
+        #name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #course {
+            font-style: italic;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        #bio-description {
+            max-width: 600px;
+            margin: auto;
+            font-size: 14px;
+
+        }
+
+        #exercise-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .week-box {
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1 1 200px;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .week-icon {
+            margin-right: 10px;
+        }
+
+        .week-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: large;
+        }
+
+        .divider {
+            width: 100%;
+            height: 2px;
+            background-color: rgba(0, 0, 0, 0.2);
+            margin: 10px 0 15px;
+        }
+
+        .week-box a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            cursor: pointer;
+            font-size: medium;
+        }
+
+        footer {
+            background-color: #205781;
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        footer img {
+            width: 24px;
+            height: 24px;
+        }
+
+        @media (max-width: 720px) {
+
+            header,
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .week-box {
+                max-width: 100%;
+            }
+
+            #profile-image img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">LOGO</div>
+        <div id="social-links">
+            <img src="images/twitter.png" alt="Twitter">
+            <img src="images/linkedln.png" alt="Linkedln">
+            <img src="images/github.png" alt="GitHub">
+        </div>
+    </header>
+
+    <div id="container">
+        <div id="profile-image">
+            <img src="images/profile.jpg" alt="Profile">
+        </div>
+
+        <div id="content">
+            <div id="name">Chew Hao Yu</div>
+            <div id="course">Web Publishing</div>
+            <div id="bio-description">
+                Hello! I'm Chew Hao Yu, a [Your Profession]. I love [a few things you love or are passionate about].
+                Welcome to my personal page!
+            </div>
+        </div>
+
+        <div id="exercise-list">
+            <div class="row">
+                <div class="week-box">
+                    <div class="week-title"> <img src="images/calendar.png" alt="Icon" class="week-icon">Week 1</div>
+                    <div class="divider"></div>
+                    <a href="week1/exercise1.html" target="_blank">Exercise 1</a>
+                    <a href="week1/exercise2.html" target="_blank">Exercise 2</a>
+                    <a href="week1/exercise3.html" target="_blank">Exercise 3</a>
+                </div>
+                <div class="week-box">
+                    <div class="week-title"><img src="images/calendar.png" alt="Icon" class="week-icon">Week 2</div>
+                    <div class="divider"></div>
+                    <a href="week2/exe1.html" target="_blank">Exercise 1</a>
+                    <a href="week2/exe2.html" target="_blank">Exercise 2</a>
+                </div>
+                <div class="week-box">
+                    <div class="week-title"><img src="images/calendar.png" alt="Icon" class="week-icon">Week 3</div>
+                    <div class="divider"></div>
+                    <a href="week3/exe1.html" target="_blank">Exercise 1</a>
+                    <a href="week3/exe2.html" target="_blank">Exercise 2</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="week-box">
+                    <div class="week-title"><img src="images/calendar.png" alt="Icon" class="week-icon">Week 4</div>
+                    <div class="divider"></div>
+                    <a href="week4/index.html" target="_blank">Exercise 1</a>
+                    <a href="week4/portfolio.html" target="_blank">Exercise 2</a>
+                </div>
+                <div class="week-box">
+                    <div class="week-title"><img src="images/calendar.png" alt="Icon" class="week-icon">Week 7</div>
+                    <div class="divider"></div>
+                    <a href="week7/index.html" target="_blank">Exercise 1</a>
+                    <a href="week7/portfolio.html" target="_blank">Exercise 2</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <img src="images/twitter.png" alt="Twitter">
+            <img src="images/linkedln.png" alt="LinkedIn">
+            <img src="images/github.png" alt="GitHub">
+        </div>
+        © 2024 Chew Hao Yu. All rights reserved.
+    </footer>
+</body>
+
+</html>
