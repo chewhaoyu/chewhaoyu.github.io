@@ -560,3 +560,176 @@
     color: #333;
     background-color: white;
 }
+
+@media only screen and (max-width: 768px) {
+    #content-wrapper {
+        flex-direction: column;
+    }
+
+    #left-column,
+    #right-column,
+    #nutrition-container,
+    #recent-recipes,
+    #trending-recipes,
+    #related-product,
+    #tags {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    #conclude {
+        padding: 20px;
+    }
+
+    #conclude-background {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    #conclude-banner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-rating {
+        max-width: 100%;
+    }
+
+    .conclude-image {
+        width: 100%;
+        height: auto;
+    }
+
+    #buttons {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #buttons button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    #conclude-ingredient-section,
+    #conclude-instructions-section,
+    #conclude-cooking-note {
+        max-width: 100%;
+    }
+
+    .banner-details {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .conclude-instruction-step {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .conclude-instruction-number {
+        margin-bottom: 10px;
+    }
+
+    #comment-section {
+        width: 100%;
+        margin: 40px 0;
+        padding: 0 20px;
+    }
+
+    .comment.reply {
+        margin-left: 20px;
+    }
+
+    .comment-text {
+        margin: 20px 0;
+    }
+
+    #nutrition-facts {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .recent-recipe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recent-recipe img {
+        width: 100%;
+        height: auto;
+    }
+
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #related-product {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    #related-product button {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 16px;
+    }
+
+    .tag-box {
+        justify-content: center;
+    }
+
+    #tags {
+        margin: 20px;
+    }
+
+    .comment-footer {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #rate-this-recipe textarea {
+        height: 100px;
+    }
+
+    .post-comment {
+        width: 100%;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    h2,
+    h3,
+    h4 {
+        font-size: 20px;
+    }
+
+    .rating,
+    .banner-details,
+    #conclude-ingredient-section p,
+    .conclude-note-box p,
+    .conclude-instruction-step p,
+    .comment-header,
+    .comment-text,
+    .comment-footer,
+    .recent-details p,
+    .calories,
+    .tag {
+        font-size: 16px;
+    }
+
+    .stars {
+        font-size: 12px;
+    }
+
+    #rate-this-recipe h3 {
+        font-size: 20px;
+    }
+
+    .comment-group .comment-time {
+        font-size: 13px;
+    }
+}
