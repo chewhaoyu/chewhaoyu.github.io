@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mixed Greens with Sun-Dried Tomato Dressing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+
+<body>
+    <style>
+        #recipe-main {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 150px;
+            flex-wrap: wrap;
+            max-width: 100%;
+        }
+
+        #path {
+            font-size: 16px;
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+
+
+        #recipe-title {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #recipe-title h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #recipe-details {
+            display: flex;
+            gap: 20px;
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .recipe-image {
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        #time-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 16px;
+            margin: 20px;
+            color: black;
+        }
+
+        #time-info div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            margin-left: 20px;
+        }
+
+        #time-info span {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .time-box+.time-box {
+            padding-left: 20px;
+            border-left: 2px solid black;
+        }
+
+        #short-description {
+            max-width: 90%;
+            font-size: 18px;
+            color: #333;
+        }
+
+        #ingredients-section {
+            padding: 0px 150px;
+            max-width: 50%;
+        }
+
+        #ingredients-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #ingredients-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 25px;
+            color: #555;
+            margin-bottom: 50px;
+        }
+
+        .ingredient-items {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .ingredient-items i {
+            background-color: #974E44;
+            border-color: #974E44;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 10%;
+            color: white;
+            font-size: 15px;
+            padding: 3.5px;
+        }
+
+        .ingredient-cross {
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        .ingredient-box {
+            width: 20px;
+            height: 20px;
+            border-color: #974E44;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 10%;
+        }
+
+        #instructions-section {
+            padding: 0px 150px;
+            max-width: 70%;
+        }
+
+        #instructions-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #instruction-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .instruction-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .instruction-number {
+            width: 35px;
+            height: 35px;
+            min-width: 35px;
+            background-color: #974E44;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .instruction-step p {
+            margin: 0;
+            line-height: 1.6;
+            color: black;
+            font-size: 25px;
+        }
+    </style>
+
+    <div id="container">
+        <div id="nav">
+            <div id="logo-image">
+                <img src="image/logo-icon.png" alt="Logo" />
+                <span class="brand-text">Perfect<span class="highlight">Recipe</span></span>
+            </div>
+
+            <div id="nav-menu">
+                <div>Home</div>
+                <div>Recipe</div>
+                <div>Add Recipe</div>
+                <div>Blog</div>
+                <div>About us</div>
+            </div>
+
+            <div id="account">
+                <button id="login">Login</button>
+                <button id="register">Register</button>
+            </div>
+        </div>
+        <div id="content-wrapper">
+            <div id="left-column">
+                <div id="recipe-main">
+                    <div id="path">
+                        <p>Home > Recipe > Mixed Greens with Sun-Dried Tomato Dressing</p>
+                    </div>
+                    <div id="recipe-title">
+                        <h1>Mixed Greens with Sun-Dried Tomato Dressing</h1>
+                        <div id="recipe-details">
+                            <div>Author name</div>
+                            <div>Sep 26, 2023</div>
+                            <div>22 comments</div>
+                            <div>9 Saves</div>
+                            <div>4.0/10 Reviews</div>
+                        </div>
+                    </div>
+                    <div class="recipe-image">
+                        <img src="image/mix-salad.jpg" alt="Mixed Greens with Sun-Dried Tomato Dressing" width="100%"
+                            height="50%">
+                    </div>
+                    <div id="time-info">
+                        <div class="time-box">
+                            <div><span>Prep Time:</span> 5 mins</div>
+                        </div>
+                        <div class="time-box">
+                            <div><span>Cook Time:</span> 5 mins</div>
+                        </div>
+                        <div class="time-box">
+                            <div><span>Serving:</span> 4 mins</div>
+                        </div>
+                        <div>Print Recipe</div>
+                    </div>
+                    <div id="short-description">
+                        <p>This recipe features a vibrant and refreshing salad made with a medley of mixed greens,
+                            accompanied
+                            by a flavorful sun-dried tomato dressing.</p>
+                    </div>
+                </div>
+
+                <div id="ingredients-section">
+                    <h2>Ingredients:</h2>
+                    <div id="ingredients-list">
+                        <div class="ingredient-items">
+                            <i class="fa-solid fa-check"></i>
+                            <div class="ingredient-cross">1/4 cup Sun-dried tomatoes</div>
+                        </div>
+                        <div class="ingredient-items">
+                            <i class="fa-solid fa-check"></i>
+                            <div class="ingredient-cross">2 tbsp Soymilk</div>
+                        </div>
+                        <div class="ingredient-items">
+                            <div class="ingredient-box"></div>
+                            <div>5/8 tsp Rosemary</div>
+                        </div>
+                        <div class="ingredient-items">
+                            <div class="ingredient-box"></div>
+                            <div>3/4 tsp Thyme</div>
+                        </div>
+                        <div class="ingredient-items">
+                            <div class="ingredient-box"></div>
+                            <div>1/4 medium whole Tomatoes</div>
+                        </div>
+                        <div class="ingredient-items">
+                            <div class="ingredient-box"></div>
+                            <div>1/4 fruit without seeds Lemons</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="instructions-section">
+                    <h2>Instructions:</h2>
+                    <div id="instruction-list">
+                        <div class="instruction-step">
+                            <div class="instruction-number">1</div>
+                            <p>Soak the sun-dried tomatoes in the soy milk for an hour.</p>
+                        </div>
+                        <div class="instruction-step">
+                            <div class="instruction-number">2</div>
+                            <p>Chop the fresh herbs, tomatoes, and onions and toss them
+                                with the salad greens. Add additional veggies as desired.</p>
+                        </div>
+                        <div class="instruction-step">
+                            <div class="instruction-number">3</div>
+                            <p>Juice the lemon and combine in a high-powered blender
+                                with the sun dried tomato mixture and garlic until smooth. Pour over salad and toss
+                                together
+                                well. Top with brazil nuts and enjoy!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="conclude">
+                    <div id="conclude-background">
+                        <div id="conclude-banner">
+                            <div id="image-rating">
+                                <img src="image/mix-salad.jpg" alt="Dish Image" class="conclude-image">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    4.0 / 34 Reviews
+                                </div>
+                            </div>
+                            <div class="recipe-info">
+                                <h3>Mixed Greens with Sun-Dried Tomato Dressing</h3>
+                                <div class="banner-details">
+                                    <span>Author name</span>
+                                    <span>Sep 26, 2023</span>
+                                    <span>Dinner, Salad</span>
+                                    <span>22 comments</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="buttons">
+                            <button>Print Recipe</button>
+                            <button>Add to Favorite</button>
+                            <button>Share Recipe</button>
+                        </div>
+                        <div id="conclude-ingredient-section">
+                            <h2>Ingredients:</h2>
+                            <div class="conclude-ingredient-item checked">
+                                <i class="fa-solid fa-check"></i>
+                                <p class="conclude-crossed">1/4 cup Sun-dried tomatoes</p>
+                            </div>
+                            <div class="conclude-ingredient-item checked">
+                                <i class="fa-solid fa-check"></i>
+                                <p class="conclude-crossed">2 tbsp Soymilk</p>
+                            </div>
+                            <div class="conclude-ingredient-item">
+                                <div class="conclude-ingredient-box"></div>
+                                <p>5/8 tsp Rosemary</p>
+                            </div>
+                            <div class="conclude-ingredient-item">
+                                <div class="conclude-ingredient-box"></div>
+                                <p>3/4 tsp Thyme</p>
+                            </div>
+                            <div class="conclude-ingredient-item">
+                                <div class="conclude-ingredient-box"></div>
+                                <p>1/4 medium whole Tomatoes</p>
+                            </div>
+                            <div class="conclude-ingredient-item">
+                                <div class="conclude-ingredient-box"></div>
+                                <p>1/4 fruit without seeds Lemons</p>
+                            </div>
+                        </div>
+
+                        <div id="conclude-instructions-section">
+                            <h2>Instructions:</h2>
+                            <div id="conclude-instruction-list">
+                                <div class="conclude-instruction-step">
+                                    <div class="conclude-instruction-number">1</div>
+                                    <p>Soak the sun-dried tomatoes in the soy milk for an hour.</p>
+                                </div>
+                                <div class="conclude-instruction-step">
+                                    <div class="conclude-instruction-number">2</div>
+                                    <p>Chop the fresh herbs, tomatoes, and onions and toss them with the salad greens.
+                                        Add
+                                        additional veggies as desired.</p>
+                                </div>
+                                <div class="conclude-instruction-step">
+                                    <div class="conclude-instruction-number">3</div>
+                                    <p>Juice the lemon and combine in a high-powered blender with the sun dried tomato
+                                        mixture
+                                        and
+                                        garlic until smooth. Pour over salad and toss together well. Top with brazil
+                                        nuts and
+                                        enjoy!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="conclude-cooking-note">
+                            <h2>Cooking Note:</h2>
+                            <div class="conclude-note-box">
+                                <div class="conclude-instruction-number">1</div>
+                                <p>Ensure the freshness of your mixed greens. Look for crisp, vibrant leaves with no
+                                    signs of
+                                    wilting or browning.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="comment-section">
+                    <h2>Comment</h2>
+
+                    <div class="comment">
+                        <img src="image/user-profile.jpg" alt="User" class="comment-avatar">
+                        <div class="comment-body">
+                            <div class="comment-header">
+                                <div class="comment-group">
+                                    <span class="comment-name">Sara Johnson</span>
+                                    <span class="comment-time">40min ago</span>
+                                </div>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                            <p class="comment-text">Wow, this Mixed Greens with Sun-Dried Tomato Dressing recipe is a
+                                flavor
+                                explosion in my mouth! Very delicious.</p>
+                            <div class="comment-footer">
+                                <span class="comment-reply"><i class="fa-solid fa-comment"></i> Reply</span>
+                                <span class="comment-likes"><i class="fa-solid fa-heart"></i> 26</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment reply">
+                        <img src="image/user-profile.jpg" alt="User" class="comment-avatar">
+                        <div class="comment-body">
+                            <div class="comment-header">
+                                <div class="comment-group">
+                                    <span class="comment-name">Jessica Martinez</span>
+                                    <span class="comment-time">40min ago</span>
+                                </div>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                            <p class="comment-text">I agree with you, very delicious.</p>
+                            <div class="comment-footer">
+                                <span class="comment-reply"><i class="fa-solid fa-comment"></i> Reply</span>
+                                <span class="comment-likes"><i class="fa-solid fa-heart"></i> 10</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <img src="image/user-profile.jpg" alt="User" class="comment-avatar">
+                        <div class="comment-body">
+                            <div class="comment-header">
+                                <span class="comment-name">David Wilson</span>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                            <p class="comment-text">The combination of fresh greens and the zesty sun-dried tomato
+                                dressing is a
+                                total game-changer. So easy to make and incredibly delicious!</p>
+                            <div class="comment-footer">
+                                <span class="comment-reply"><i class="fa-solid fa-comment"></i> Reply</span>
+                                <span class="comment-likes"><i class="fa-solid fa-heart"></i> 46</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="load-comments">Load more comments</button>
+
+                    <div id="rate-this-recipe">
+                        <h3>Rate this recipe and share your opinion</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <textarea placeholder="Type here..."></textarea>
+                        <button class="post-comment">Post</button>
+                    </div>
+                </div>
+            </div>
+            <div id="right-column">
+                <div id="nutrition-container">
+                    <div id="nutrition-facts">
+                        <h3>Nutrition Facts</h3>
+                        <div class="nutrition-item"><span>Calories</span><span>494</span></div>
+                        <div class="nutrition-item"><span>Carbs</span><span>80g</span></div>
+                        <div class="nutrition-item"><span>Fat</span><span>18g</span></div>
+                        <div class="nutrition-item"><span>Protein</span><span>24g</span></div>
+                        <div class="nutrition-item"><span>Fiber</span><span>23g</span></div>
+                        <div class="nutrition-item"><span>Net carbs</span><span>56g</span></div>
+                        <div class="nutrition-item"><span>Sodium</span><span>444mg</span></div>
+                        <div class="nutrition-item"><span>Cholesterol</span><span>0mg</span></div>
+                    </div>
+                </div>
+
+                <div id="recent-recipes">
+                    <h3>Recent Recipes</h3>
+
+                    <div class="recent-recipe">
+                        <img src="image/wrap.jpg" alt="Green Goddess Wrap">
+                        <div class="recent-details">
+                            <p>Green Goddess Wrap Is a Light & Simple</p>
+                            <div class="stars"><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="calories"><i class="fa fa-fire"></i> 300 cals</div>
+                        </div>
+                    </div>
+
+                    <div class="recent-recipe">
+                        <img src="image/salad-wrap.jpg" alt="Green Goddess Bowl">
+                        <div class="recent-details">
+                            <p>Green Goddess Wrap Is a Light & Simple</p>
+                            <div class="stars"><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="calories"><i class="fa fa-fire"></i> 475 cals</div>
+                        </div>
+                    </div>
+
+                    <div class="recent-recipe">
+                        <img src="image/straberry.jpg" alt="Green Salad">
+                        <div class="recent-details">
+                            <p>Green Goddess Wrap Is a Light & Simple</p>
+                            <div class="stars"><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="calories"><i class="fa fa-fire"></i> 139 cals</div>
+                        </div>
+                    </div>
+
+                    <div id="stay-connected">
+                        <h4>Stay connected with our<br>Recipes updates</h4>
+                        <p>for the latest health tips and delicious recipes</p>
+                        <div class="email-box">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="Enter Your Email">
+                        </div>
+                        <button>Sign up</button>
+                    </div>
+                    <div id="related-recipes">
+                        <h3>Related Recipes</h3>
+                        <div class="related-grid">
+                            <div class="related-item">
+                                <img src="image/onion-rings.jpg" alt="Fish">
+                                <p>Fisherman's Quick Fish</p>
+                            </div>
+                            <div class="related-item">
+                                <img src="image/recent-toast.jpg" alt="Toast">
+                                <p>Toast with Tomato, Onion, & Hummus</p>
+                            </div>
+                            <div class="related-item">
+                                <img src="image/roll-up.jpg" alt="Roll-Ups">
+                                <p>Ham, Egg, and Spinach Roll-Ups</p>
+                            </div>
+                            <div class="related-item">
+                                <img src="image/chicken-wrap.png" alt="Chicken Ranch Wrap">
+                                <p>Chicken Ranch Wrap</p>
+                            </div>
+                            <div class="related-item">
+                                <img src="image/popcorn.jpg" alt="Popcorn">
+                                <p>Truffle Popcorn</p>
+                            </div>
+                            <div class="related-item">
+                                <img src="image/tuna-salad.jpg" alt="Tuna Salad">
+                                <p>Tuna Mex Tuna Salad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="trending-recipes">
+                    <h3>Trending Recipes</h3>
+
+                    <div class="recent-recipe">
+                        <img src="image/wrap.jpg" alt="Green Goddess Wrap">
+                        <div class="recent-details">
+                            <p>Green Goddess Wrap Is a Light & Simple</p>
+                            <div class="stars"><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="calories"><i class="fa fa-fire"></i> 300 cals</div>
+                        </div>
+                    </div>
+
+                    <div class="recent-recipe">
+                        <img src="image/salad-wrap.jpg" alt="Green Goddess Bowl">
+                        <div class="recent-details">
+                            <p>Green Goddess Wrap Is a Light & Simple</p>
+                            <div class="stars"><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="calories"><i class="fa fa-fire"></i> 475 cals</div>
+                        </div>
+                    </div>
+
+                    <div class="recent-recipe">
+                        <img src="image/straberry.jpg" alt="Green Salad">
+                        <div class="recent-details">
+                            <p>Green Goddess Wrap Is a Light & Simple</p>
+                            <div class="stars"><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="calories"><i class="fa fa-fire"></i> 139 cals</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="related-product">
+                    <h3>Related Product</h3>
+                    <img src="image/products.jpg" alt="Spoons with coffee grounds">
+                    <button>Buy Now</button>
+                </div>
+
+                <div id="tags">
+                    <h3>Tags</h3>
+                    <div class="tag-box">
+                        <div class="tag">#Dessert</div>
+                        <div class="tag">#CheesecakeRecipe</div>
+                        <div class="tag">#FoodBlog</div>
+                        <div class="tag">#DeliciousDesserts</div>
+                        <div class="tag">#Baking</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h2><img src="image/logo-icon.png" alt="Logo Icon" class="logo-icon"> <span
+                            class="logo-text">Perfect<span class="highlight">Recipe</span></span></h2>
+                    <p>The purpose of lorem ipsum is to create a natural looking block of text that doesn't distract
+                        from the layout.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h4>Quick links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Recipes</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-column">
+                        <h4>Quick links</h4>
+                        <ul>
+                            <li><a href="#">Share Recipe</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Terms Of Use</a></li>
+                            <li><a href="#">Privacy & Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter to get more free tip</p>
+                    <form>
+                        <input type="email" placeholder="Enter Your Email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2023 RecipeLogo. All Right Reserved</p>
+                <div class="social-icons">
+                    <img src="tiktok.png" alt="TikTok">
+                    <img src="x.png" alt="X">
+                    <img src="facebook.png" alt="Facebook">
+                    <img src="instagram.png" alt="Instagram">
+                    <img src="pinterest.png" alt="Pinterest">
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

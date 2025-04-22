@@ -2,530 +2,510 @@
 <html>
 
 <head>
-    <title>HY:Fashion Styling Tips</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="general.css">
+    <title>Treding Recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body class="container">
+<body>
     <style>
         body {
-            background-color: #F8F5F0;
-            font-family: playfair display, serif;
+            font-family: Arial, sans-serif;
             margin: 0;
-        }
-
-
-        #logo {
-            font-weight: bold;
-            font-size: 24px;
-        }
-
-        #hero {
-            text-align: center;
-            background-size: cover;
-        }
-
-        #hero-text {
-            font-family: "Playfair Display", serif;
-            font-size: 7vw;
-            font-style: italic;
-            font-weight: 400;
-            margin-bottom: 40px;
-            position: absolute;
-            top: 10%;
-            left: 20%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            z-index: 1;
-
-        }
-
-        #hero-text #here {
-            position: relative;
-            left: 20%;
-        }
-
-        #hero-text #style {
-            position: relative;
-            left: 70%;
-
-        }
-
-        #hero-text span {
-            display: inline-block;
-        }
-
-        #hero-image {
-            position: relative;
-            width: 100%;
-            height: 90vh;
-            object-fit: cover;
-        }
-
-        #slogan {
-            position: relative;
-            width: 100%;
-            height: 300px;
-            font-family: "Playfair Display", serif;
-            font-style: italic;
-            text-align: center;
-            padding-top: 60px;
-            margin-bottom: 100px;
-        }
-
-        #slogan span {
-            position: absolute;
-        }
-
-        #dress,
-        #your,
-        #ape,
-        #ine,
-        #confidence {
-            font-size: 60px;
-        }
-
-        #sh {
-            font-size: 150px;
-            left: 10%;
-        }
-
-        #dress {
-            color: black;
-            top: 20%;
-            left: 34%;
-        }
-
-        #your {
-            color: black;
-            top: 38%;
-            left: 34%;
-        }
-
-        #sh {
-            color: black;
-            top: 31%;
-            left: 44%;
-        }
-
-        #ape {
-            color: black;
-            top: 38%;
-            left: 54%;
-        }
-
-        #ine {
-            color: black;
-            top: 58%;
-            left: 54%;
-        }
-
-        #confidence {
-            color: black;
-            top: 77%;
-            left: 43%;
-        }
-
-        #firstexclamation,
-        #secondexclamation {
-            font-size: 500px;
-            color: rgba(163, 171, 148, 0.3);
-        }
-
-        #firstexclamation {
-            top: 0px;
-            left: 15%;
-        }
-
-        #secondexclamation {
-            right: 15%;
-            top: 0px;
-        }
-
-        #rectangle-frame {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #B5A58D;
-            padding: 80px;
-            position: relative;
-            height: auto;
-            overflow: hidden;
-        }
-
-        #frame-text {
-            flex: 1;
-            max-width: 40%;
-            color: #000000;
-            font-family: 'Playfair Display', serif;
-            margin-top: 60px;
-        }
-
-        .slogantext {
-            font-size: 54px;
-            font-style: italic;
-            margin-bottom: 16px;
-        }
-
-        #frame-text h3.theme {
-            font-weight: bold;
-            font-size: 25px;
-            margin-top: 40px;
-            margin-bottom: 10px;
-        }
-
-        #frame-text .title .slogantext {
-            display: block;
-        }
-
-        #frame-text .description {
-            font-size: 16px;
-            line-height: 1.6;
-            font-family: 'Poppins', sans-serif;
-
-            margin: 0;
-        }
-
-        #learn-more {
-            margin-top: 40px;
-            padding: 12px 60px;
-            background-color: #5A4E3C;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-family: 'Poppins', sans-serif;
-            font-size: 14px;
-            border-radius: 5px;
-        }
-
-        #frame-images {
-            max-width: 60%;
-            display: flex;
-            flex: 1;
-            height: auto;
-            justify-content: flex-end;
-        }
-
-        #frame-images img {
-            max-width: 70%;
-            object-fit: contain;
-        }
-
-        #oval-frame {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #B5A58D;
-            padding: 80px;
-            position: relative;
-            height: auto;
-            overflow: hidden;
-        }
-
-        #frame2-text {
-            flex: 1;
-            max-width: 40%;
-            color: #000000;
-            font-family: 'Playfair Display', serif;
-            margin-top: 60px;
-            text-align: right;
-        }
-
-        #frame2-text .title .slogantext {
-            display: block;
-        }
-
-        .slogantext {
-            font-size: 54px;
-            font-style: italic;
-            margin-bottom: 16px;
-        }
-
-        #frame2-text h3.theme {
-            font-weight: bold;
-            font-size: 25px;
-            margin-top: 40px;
-            margin-bottom: 10px;
-        }
-
-        #frame2-text .description {
-            font-size: 16px;
-            line-height: 1.6;
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-        }
-
-        #learn-more2 {
-            margin-top: 40px;
-            padding: 12px 60px;
-            background-color: #5A4E3C;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-family: 'Poppins', sans-serif;
-            font-size: 14px;
-            border-radius: 5px;
-        }
-
-        #frame2-images {
-            max-width: 60%;
-            display: flex;
-            flex: 1;
-            height: auto
-        }
-
-        #frame2-images img {
-            max-width: 70%;
-            object-fit: contain;
-        }
-
-        #trapezoid-frame {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #B5A58D;
-            padding: 80px;
-            position: relative;
-            height: auto;
-            overflow: hidden;
-        }
-
-        #frame3-text {
-            flex: 1;
-            max-width: 40%;
-            color: #000000;
-            font-family: 'Playfair Display', serif;
-            margin-top: 60px;
-        }
-
-        .slogantext {
-            font-size: 54px;
-            font-style: italic;
-            margin-bottom: 16px;
-        }
-
-        #frame3-text h3.theme {
-            font-weight: bold;
-            font-size: 25px;
-            margin-top: 40px;
-            margin-bottom: 10px;
-        }
-
-        #frame3-text .title .slogantext {
-            display: block;
-        }
-
-        #frame3-text .description {
-            font-size: 16px;
-            line-height: 1.6;
-            font-family: 'Poppins', sans-serif;
-
-            margin: 0;
-        }
-
-        #learn-more3 {
-            margin-top: 40px;
-            padding: 12px 60px;
-            background-color: #5A4E3C;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-family: 'Poppins', sans-serif;
-            font-size: 14px;
-            border-radius: 5px;
-        }
-
-        #frame3-images {
-            max-width: 60%;
-            display: flex;
-            flex: 1;
-            height: auto;
-            justify-content: flex-end;
-        }
-
-        #frame3-images img {
-            max-width: 70%;
-            object-fit: contain;
-        }
-
-        #identify {
-            position: relative;
-            background-color: #f8f5f0;
-            padding: 100px;
-            text-align: center;
-            overflow: hidden;
-        }
-
-        #backgroundtext {
-            position: absolute;
-            top: 60%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 35vw;
-            color: rgba(0, 0, 0, 0.05);
-            white-space: nowrap;
-            z-index: 0;
-            pointer-events: none;
-            user-select: none;
-            font-family: "Neue Haas Grotesk", sans-serif;
-        }
-
-        #identify-text {
-            position: relative;
-            display: flex;
-            justify-content: flex-start;
-            flex-direction: column;
-            align-items: flex-start;
-            z-index: 1;
-            flex-wrap: wrap;
-        }
-
-        #small-heading {
-            font-size: 30px;
-            margin-bottom: 0px;
-            font-family: "Neue Haas Grotesk", sans-serif;
-            font-weight: bold;
-        }
-
-        #main-heading {
-            font-size: 60px;
-            margin-bottom: 30px;
-            margin-top: 0px;
-            font-family: "Neue Haas Grotesk", sans-serif;
-        }
-
-        #identify-button {
-            background-color: #725A3E;
-            color: white;
-            font-size: 16px;
-            padding: 12px 35px;
-            border: none;
-            border-radius: 6px;
-            font-weight: bold;
-            cursor: pointer;
+            padding: 0;
         }
     </style>
+    <div id="container">
+        <div id="info-container">
+            <div id="nav">
+                <div id="logo-image">
+                    <img src="image/logo-icon.png" alt="Logo" />
+                    <span class="brand-text">Perfect<span class="highlight">Recipe</span></span>
+                </div>
 
-    <div id="nav">
-        <div id="logo">HY</div>
-        <div id="nav-menu">
-            <div>Identify Your Body</div>
-            <div>Rectangular</div>
-            <div>Oval</div>
-            <div>Trapezoid</div>
-        </div>
-    </div>
-    <div id="hero">
-        <h1 id="hero-text">
-            <span id="here">Here ,</span>
-            <span id="style">You Style</span>
-        </h1>
-        <img id="hero-image" src="images/herobanner.jpg" alt="banner" />
-    </div>
+                <div id="nav-menu">
+                    <div>Home</div>
+                    <div>Recipe</div>
+                    <div>Add Recipe</div>
+                    <div>Blog</div>
+                    <div>About us</div>
+                </div>
 
-    <div id="slogan">
-        <span id="firstexclamation">!</span>
-        <span id="dress">Dress for</span>
-        <span id="your">Your</span>
-        <span id="sh">Sh</span>
-        <span id="ape">ape,</span>
-        <span id="ine">ine with</span>
-        <span id="confidence">Confidence</span>
-        <span id="secondexclamation">!</span>
-    </div>
-
-    <div id="rectangle-frame">
-        <div id="frame-text">
-            <div class="slogantext">
-                <span>Rectangle Frame,</span>
-                <span>Infinite Style.</span>
+                <div id="account">
+                    <button id="login">Login</button>
+                    <button id="register">Register</button>
+                </div>
             </div>
-            <h3 class="theme">Modern Minimalist Elegance</h3>
-            <p class="description">
-                This outfit exudes elegance and sophistication with a monochromatic white ensemble. The tailored blazer
-                adds structure, while the textured knit top underneath introduces subtle contrast. The straight-leg
-                trousers maintain a clean silhouette, and the black leather boots anchor the look, adding a refined
-                edge. Perfect for formal events or a polished everyday statement.
-            </p>
-            <button id="learn-more">Learn More</button>
-        </div>
+            <div id="hero-banner">
+                <div id="banner-content">
+                    <div id="banner-text">
+                        <h1>Your Daily Dish A <span>Food</span> Journey</h1>
+                        <p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Maecenas vitae enim pharetra,
+                            venenatis nunc eget, finibus est. Proin velit
+                        </p>
+                        <button id="sign-button">Sign up</button>
+                        <div id="account-info">
+                            <p>Do you have account?<span> Log in</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="banner-image">
+                    <img src="image/hero-image.png" width="70%">
+                </div>
+            </div>
+            <div id="share-section">
+                <div id="share-image">
+                    <img src="image/share.jpg" alt="Sharing Recipe Photo" width="100%">
+                </div>
+                <div id="share-content">
+                    <div id="share-text">
+                        <h2>Share Your <span>Recipes</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae enim pharetra,
+                            venenatis
+                            nunc
+                            eget, finibus est. Proin velit</p>
+                        <button id="share-button">Create New Recipe</button>
+                    </div>
+                </div>
+            </div>
 
-        <div id="frame-images">
-            <img id="bg1" src="images/main1.png" alt="Background Model" />
+            <div id="section-trending">
+                <div id="trending-text">
+                    <h2>Trending Recipe</h2>
+                    <a href="#">View more</a>
+                </div>
+                <div class="grid">
+                    <div class="card">
+                        <div class="bookmark">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                        <img src="image/onion-rings.jpg" alt="Onion Rings" width="100%">
+                        <div class="card-body">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <h3>Onion Rings</h3>
+                            <div class="info">
+                                <span class="profile">
+                                    <img src="image/user-profile.jpg" alt="Profile" width="20px">
+                                    Alex Martin</span>
+                                <span class="calories">322 cals</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="bookmark">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                        <img src="image/toast.jpg" alt="Toast with Egg" width="100%">
+                        <div class="card-body">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <h3>Toast with Egg</h3>
+                            <div class="info">
+                                <span class="profile">
+                                    <img src="image/user-profile.jpg" alt="Profile" width="20px">
+                                    Alex Martin</span>
+                                <span class="calories">199 cals</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="bookmark">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                        <img src="image/roll-up.jpg" alt="Wraps" width="100%">
+                        <div class="card-body">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <h3>Spinach Roll-Ups</h3>
+                            <div class="info">
+                                <span class="profile">
+                                    <img src="image/user-profile.jpg" alt="Profile" width="20px">
+                                    Alex Martin</span>
+                                <span class="calories">174 cals</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="bookmark">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                        <img src="image/chicken-wrap.png" alt="Onion Rings" width="100%">
+                        <div class="card-body">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <h3>Chicken Ranch Wrap</h3>
+                            <div class="info">
+                                <span class="profile">
+                                    <img src="image/user-profile.jpg" alt="Profile" width="20px">
+                                    Alex Martin</span>
+                                <span class="calories">188 cals</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="bookmark">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                        <img src="image/tuna-salad.jpg" alt="Onion Rings" width="100%">
+                        <div class="card-body">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <h3>Tuna Mix Tuna Salad</h3>
+                            <div class="info">
+                                <span class="profile">
+                                    <img src="image/user-profile.jpg" alt="Profile" width="20px">
+                                    Alex Martin</span>
+                                <span class="calories">298 cals</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="bookmark">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                        <img src="image/straberry-pancake.jpg" alt="Onion Rings" width="100%">
+                        <div class="card-body">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <h3>Strawberry and Cherry pancake</h3>
+                            <div class="info">
+                                <span class="profile">
+                                    <img src="user-profile.jpg" alt="Profile" width="20px">
+                                    Alex Martin</span>
+                                <span class="calories">251 cals</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="blog-section">
+                <div class="blog-header">
+                    <h2>Blog</h2>
+                    <a href="#">View more</a>
+                </div>
+
+                <div class="blog-grid">
+                    <div class="blog-card">
+                        <img src="image/blog-time.jpg" alt="Intermittent Fasting">
+                        <h3>Unlocking the Benefits of Intermittent Fasting for</h3>
+                        <p>Weight Management and Health Weight Management and Health...</p>
+                    </div>
+                    <div class="blog-card">
+                        <img src="image/blog-sugar.jpg" alt="Sugar Consumption">
+                        <h3>The Impact of Sugar Consumption on Your Health</h3>
+                        <p>Unveiling the Hidden Dangers Unveiling the Hidden Dangers...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="section-explore-recipe">
+                <div id="explore-text">
+                    <h2>Explore Recipe</h2>
+                    <a href="#">View more</a>
+                </div>
+                <div class="grid">
+                    <div class="card">
+                        <div class="bookmark">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                        <img src="image/green-wrap.jpg" alt="Onion Rings" width="100%">
+                        <div class="card-body">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <h3>Green Goddess Wrap Is a Light & Simple</h3>
+                            <div class="info">
+                                <span class="profile">
+                                    <img src="image/user-profile.jpg" alt="Profile" width="20px">
+                                    Alex Martin</span>
+                                <span class="calories">322 cals</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="bookmark">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                        <img src="image/strawberry-salad.jpg" alt="Toast with Egg" width="100%">
+                        <div class="card-body">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <h3>Strawberry and Walnut Spinach Salad</h3>
+                            <div class="info">
+                                <span class="profile">
+                                    <img src="image/user-profile.jpg" alt="Profile" width="20px">
+                                    Alex Martin</span>
+                                <span class="calories">199 cals</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="bookmark">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                        <img src="image/california-pizza.jpg" alt="Wraps" width="100%">
+                        <div class="card-body">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <h3>Copycat California Pizza Kitchen BBQ Chicken</h3>
+                            <div class="info">
+                                <span class="profile">
+                                    <img src="image/user-profile.jpg" alt="Profile" width="20px">
+                                    Alex Martin</span>
+                                <span class="calories">174 cals</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="bookmark">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                        <img src="image/yogurt.jpg" alt="Onion Rings" width="100%">
+                        <div class="card-body">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <h3>Cherry-Berry Smoothie Bowl</h3>
+                            <div class="info">
+                                <span class="profile">
+                                    <img src="image/user-profile.jpg" alt="Profile" width="20px">
+                                    Alex Martin</span>
+                                <span class="calories">322 cals</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="bookmark">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                        <img src="image/smoothie.jpg" alt="Onion Rings" width="100%">
+                        <div class="card-body">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <h3>Green smoothie</h3>
+                            <div class="info">
+                                <span class="profile">
+                                    <img src="image/user-profile.jpg" alt="Profile" width="20px">
+                                    Alex Martin</span>
+                                <span class="calories">322 cals</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="bookmark">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                        <img src="image/grilled.jpg" alt="Onion Rings" width="100%">
+                        <div class="card-body">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <h3>Grilled Red Snapper</h3>
+                            <div class="info">
+                                <span class="profile">
+                                    <img src="image/user-profile.jpg" alt="Profile" width="20px">
+                                    Alex Martin</span>
+                                <span class="calories">322 cals</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="newsletter-wrapper">
+                <div class="newsletter-box">
+                    <h2 class="newsletter-title">Let's Stay In Touch!</h2>
+                    <p class="newsletter-text">
+                        Join our newsletter, so that we reach out to you with our news and offers.
+                    </p>
+                    <div class="newsletter-input-group">
+                        <input type="email" class="newsletter-input" placeholder="Enter Your Email" />
+                        <button class="newsletter-button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div id="categories-section">
+                <div class="categories-header">
+                    <h2>Popular Categories</h2>
+                    <a href="#" class="view-more">View more</a>
+                </div>
+
+                <div class="categories-grid">
+                    <div class="category">
+                        <img src="image/breakfast.jpg" alt="Breakfast" />
+                        <p>Breakfast recipes</p>
+                    </div>
+                    <div class="category">
+                        <img src="image/lunch.jpg" alt="Lunch" />
+                        <p>Lunch recipes</p>
+                    </div>
+                    <div class="category">
+                        <img src="image/dinner.jpg" alt="Dinner" />
+                        <p>Dinner recipes</p>
+                    </div>
+                    <div class="category">
+                        <img src="image/appetizer.jpg" alt="Appetizer" />
+                        <p>Appetizer recipes</p>
+                    </div>
+                    <div class="category">
+                        <img src="image/salad.jpg" alt="Salad" />
+                        <p>Salad recipes</p>
+                    </div>
+                    <div class="category">
+                        <img src="image/pizza.jpg" alt="Pizza" />
+                        <p>Pizza recipes</p>
+                    </div>
+                    <div class="category">
+                        <img src="image/smoothie.jpg" alt="Smoothie" />
+                        <p>Smoothie recipes</p>
+                    </div>
+                    <div class="category">
+                        <img src="image/pasta.png" alt="Pasta" />
+                        <p>Pasta recipes</p>
+                    </div>
+                </div>
+            </div>
+            <div id="partners">
+                <div class="partners-container">
+                    <img src="image/nestle.jpg" alt="Nestle">
+                    <img src="image/apple.jpg" alt="Apple">
+                    <img src="image/beco.png" alt="Beco">
+                    <img src="image/amazon.jpg" alt="Amazon">
+                    <img src="image/google.png" alt="Google">
+                    <img src="image/walmart.png" alt="Walmart">
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-left">
+                        <h2><img src="image/logo-icon.png" alt="Logo Icon" class="logo-icon"> <span
+                                class="logo-text">Perfect<span class="highlight">Recipe</span></span></h2>
+                        <p>The purpose of lorem ipsum is to create a natural looking block of text that doesn't distract
+                            from the layout.</p>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="link-column">
+                            <h4>Quick links</h4>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Recipes</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="link-column">
+                            <h4>Quick links</h4>
+                            <ul>
+                                <li><a href="#">Share Recipe</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="link-column">
+                            <h4>Legal</h4>
+                            <ul>
+                                <li><a href="#">Terms Of Use</a></li>
+                                <li><a href="#">Privacy & Cookies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to our newsletter to get more free tip</p>
+                        <form>
+                            <input type="email" placeholder="Enter Your Email">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>© 2023 RecipeLogo. All Right Reserved</p>
+                    <div class="social-icons">
+                        <img src="tiktok.png" alt="TikTok">
+                        <img src="x.png" alt="X">
+                        <img src="facebook.png" alt="Facebook">
+                        <img src="instagram.png" alt="Instagram">
+                        <img src="pinterest.png" alt="Pinterest">
+                    </div>
+                </div>
+            </footer>
+
         </div>
     </div>
 
-    <div id="oval-frame">
-        <div id="frame2-images">
-            <img id="bg2" src="images/main2.png" alt="Background Mode2" />
-        </div>
-        <div id="frame2-text">
-            <div class="slogantext">
-                <span>Oval Style,</span>
-                <span>Maximum Impact.</span>
-            </div>
-            <h3 class="theme">
-                Casual Streetwear</h3>
-            <p class="description">
-                This outfit blends casual and smart elements effortlessly. The light-wash denim jacket adds a relaxed
-                touch, contrasting with the sleek black turtleneck for a refined look. The slim-fit dark trousers
-                elongate the silhouette, while the tan platform shoes introduce a pop of warmth and modern flair.
-                Finished with a simple pendant necklace, this outfit is perfect for a stylish yet comfortable day out.
-            </p>
-            <button id="learn-more2">Learn More</button>
-        </div>
-    </div>
-
-    <div id="trapezoid-frame">
-        <div id="frame3-text">
-            <div class="slogantext">
-                <span>Trapezoid Vibes, </span>
-                <span>Unstoppable Looks.</span>
-            </div>
-            <h3 class="theme">
-                Urban Tactical Streetwear</h3>
-            <p class="description">
-                This outfit blends utility and streetwear elements for a rugged yet stylish look. The olive-green
-                military-style jacket adds a structured, adventurous feel, complemented by the casual black hoodie
-                underneath. The tapered joggers provide comfort while keeping the silhouette sleek. Paired with black
-                and gray Nike sneakers, this look is perfect for an effortlessly cool urban aesthetic. The smartwatch
-                adds a modern tech-savvy touch.
-            </p>
-            <button id="learn-more3">Learn More</button>
-        </div>
-        <div id="frame3-images">
-            <img id="bg3" src="images/main3.png" alt="Background Mode3" />
-        </div>
-    </div>
-
-    <div id="identify">
-        <div id="backgroundtext">??????</div>
-        <div id="identify-text">
-            <div class="content-block">
-                <p id="small-heading">Curious Whats Your Body Shape?</p>
-            </div>
-            <div class="content-block">
-                <h2 id="main-heading">Identify Your Body Shape</h2>
-            </div>
-            <div class="content-block">
-                <button id="identify-button">Identity</button>
-            </div>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="left">HY</div>
-        <div class="center">Back To Top ↑</div>
-    </footer>
 </body>
 
 </html>
