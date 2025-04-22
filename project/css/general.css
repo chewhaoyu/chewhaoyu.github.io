@@ -217,6 +217,11 @@
         width: 100%;
     }
 
+    #login,
+    #register {
+        display: none;
+    }
+
     #account {
         width: 100%;
         justify-content: space-between;
