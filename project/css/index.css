@@ -1,3 +1,10 @@
+#info-container {
+    max-width: 1200px;
+    margin: 50px auto 50px auto;
+    display: flex;
+    align-items: center;
+}
+
 #hero-banner {
     display: flex;
     justify-content: center;
@@ -373,6 +380,7 @@
 }
 
 #categories-section {
+    max-width: 1200px;
     margin: 40px auto;
     gap: 50px;
     padding: 60px 150px;
@@ -400,13 +408,13 @@
 }
 
 .categories-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(120px, 1fr));
-    gap: 20px;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .category {
+    flex: 25%;
     text-align: center;
 }
 
