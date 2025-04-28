@@ -730,20 +730,19 @@
 
 #section-mightlike {
     display: flex;
-    flex-direction: column;
-    margin: 60px auto;
     padding: 0 150px;
+    margin: 60px auto;
+    flex-wrap: wrap;
 }
 
 #mightlike-text {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    text-align: center;
     margin-bottom: 30px;
 }
 
 #mightlike-text h2 {
-    margin: 10;
+    margin: 0;
     font-size: 40px;
 }
 
@@ -908,66 +907,19 @@
     #right-column,
     #nutrition-container,
     #recent-recipes,
-    #trending-recipes,
-    #related-product,
     #tags {
         max-width: 100%;
         padding: 0 20px;
     }
 
     #conclude {
-        padding: 20px;
+        display: none;
     }
 
-    #conclude-background {
-        max-width: 100%;
-        padding: 15px;
-    }
-
-    #conclude-banner {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .image-rating {
-        max-width: 100%;
-    }
-
-    .conclude-image {
-        width: 100%;
-        height: auto;
-    }
-
-    #buttons {
-        flex-direction: column;
-        max-width: 100%;
-    }
-
-    #buttons button {
-        width: 100%;
-        padding: 12px;
-        font-size: 16px;
-    }
-
-    #conclude-ingredient-section,
-    #conclude-instructions-section,
-    #conclude-cooking-note {
-        max-width: 100%;
-    }
 
     .banner-details {
         grid-template-columns: 1fr;
         text-align: center;
-    }
-
-    .conclude-instruction-step {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .conclude-instruction-number {
-        margin-bottom: 10px;
     }
 
     #comment-section {
@@ -990,28 +942,19 @@
     }
 
     .recent-recipe {
-        flex-direction: column;
-        align-items: center;
+        display: none;
     }
 
-    .recent-recipe img {
-        width: 100%;
-        height: auto;
+    #related-recipes {
+        display: none;
     }
 
-    .related-grid {
-        grid-template-columns: 1fr;
+    #trending-recipes {
+        display: none;
     }
 
     #related-product {
-        max-width: 100%;
-        padding: 20px;
-    }
-
-    #related-product button {
-        width: 100%;
-        padding: 12px 0;
-        font-size: 16px;
+        display: none;
     }
 
     .tag-box {
@@ -1069,5 +1012,16 @@
 
     .comment-group .comment-time {
         font-size: 13px;
+    }
+
+    #section-mightlike {
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(140px, 1fr));
+        gap: 20px;
     }
 }
