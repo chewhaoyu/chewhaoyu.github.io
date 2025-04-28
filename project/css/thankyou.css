@@ -1,0 +1,69 @@
+.thank-you-container {
+    max-width: 1200px;
+    margin: 50px auto 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-side {
+    max-width: 50%;
+}
+
+.left-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-side {
+    max-width: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.back-btn {
+    background-color: #D25A4C;
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.edit-btn {
+    background-color: #F2F2F2;
+    border: none;
+    padding: 10px 30px;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.resend {
+    color: #D25A4C;
+    cursor: pointer;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.logo {
+    margin-top: 50px;
+    font-weight: bold;
+}
