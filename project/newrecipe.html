@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/newrecipe.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="nav">
+            <div id="logo-image">
+                <img src="image/logo-icon.png" alt="Logo" />
+                <span class="brand-text">Perfect<span class="highlight">Recipe</span></span>
+            </div>
+
+            <div id="nav-menu">
+                <div>Home</div>
+                <div>Recipe</div>
+                <div>Add Recipe</div>
+                <div>Blog</div>
+                <div>About us</div>
+            </div>
+
+            <div id="account">
+                <button id="login">Login</button>
+                <button id="register">Register</button>
+            </div>
+        </div>
+        <div id="page-wrapper">
+            <div id="create-recipe-header">
+                <h1>Create new recipe</h1>
+                <button id="save-button">Save</button>
+            </div>
+
+            <div id="form-container">
+                <div id="create-recipe-form">
+                    <div class="form-section">
+                        <label for="recipe-title">Recipe Title:</label>
+                        <input type="text" id="recipe-title" placeholder="Enter your recipe title">
+                    </div>
+                    <div class="form-section image-upload-section">
+                        <label>Recipe image:</label>
+                        <div class="image-preview">
+                            <img src="image/new-recipe.jpg" alt="Recipe Image" id="main-image">
+                            <div class="image-buttons">
+                                <button class="small-btn">Set as cover</button>
+                                <button class="small-btn">Change image</button>
+                            </div>
+                        </div>
+                        <div class="thumbnail-upload">
+                            <div class="thumbnail-box">
+                                <img src="image/new-recipe.jpg" alt="Thumbnail">
+                                <span class="cover-tag">Cover</span>
+                            </div>
+                            <div class="add-photo-box">
+                                <span>➕</span>
+                                <p>Add Photo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <label for="description">Description:</label>
+                        <textarea id="description" rows="3" placeholder="Introduce your recipe"></textarea>
+                    </div>
+                    <div class="form-section">
+                        <label>Ingredients:</label>
+                        <input type="text" placeholder="1 x 15 oz can black beans">
+                        <input type="text" placeholder="1 cup corn">
+                        <button class="add-btn">+ Add Ingredient</button>
+                    </div>
+                    <div class="form-section">
+                        <label>Instructions:</label>
+                        <div class="instruction-step">
+                            <strong>Step 1</strong>
+                            <textarea rows="2" placeholder="Write instruction for step 1"></textarea>
+                        </div>
+                        <div class="instruction-step">
+                            <strong>Step 2</strong>
+                            <textarea rows="4" placeholder="Write instruction for step 2"></textarea>
+                        </div>
+                        <button class="add-btn">+ Add Step</button>
+                    </div>
+                    <div class="form-section">
+                        <label for="servings">Servings:</label>
+                        <input type="text" id="servings" placeholder="How many portions?">
+                    </div>
+                    <div class="form-section time-section">
+                        <div class="time-box">
+                            <label>Cooking Time:</label>
+                            <input type="text" placeholder="Hours">
+                            <input type="text" placeholder="Minutes">
+                        </div>
+                        <div class="time-box">
+                            <label>Prep Time:</label>
+                            <input type="text" placeholder="Hours">
+                            <input type="text" placeholder="Minutes">
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <label for="cuisine">Cuisine:</label>
+                        <select id="cuisine">
+                            <option>Italian</option>
+                            <option>Mexican</option>
+                            <option>Asian</option>
+                        </select>
+                    </div>
+                    <div class="form-section">
+                        <label for="collection">Collection:</label>
+                        <select id="collection">
+                            <option>1 Collection Selected</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h2><img src="image/logo-icon.png" alt="Logo Icon" class="logo-icon"> <span
+                            class="logo-text">Perfect<span class="highlight">Recipe</span></span></h2>
+                    <p>The purpose of lorem ipsum is to create a natural looking block of text that doesn't
+                        distract
+                        from the layout.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h4>Quick links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Recipes</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-column">
+                        <h4>Quick links</h4>
+                        <ul>
+                            <li><a href="#">Share Recipe</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Terms Of Use</a></li>
+                            <li><a href="#">Privacy & Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter to get more free tip</p>
+                    <form>
+                        <input type="email" placeholder="Enter Your Email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2023 RecipeLogo. All Right Reserved</p>
+                <div class="social-icons">
+                    <img src="tiktok.png" alt="TikTok">
+                    <img src="x.png" alt="X">
+                    <img src="facebook.png" alt="Facebook">
+                    <img src="instagram.png" alt="Instagram">
+                    <img src="pinterest.png" alt="Pinterest">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
