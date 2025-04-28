@@ -253,6 +253,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .blog-card {
@@ -497,11 +498,14 @@
         display: none;
     }
 
-    .grid,
-    .blog-grid,
-    .categories-grid {
+    .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .newsletter-input-group {
