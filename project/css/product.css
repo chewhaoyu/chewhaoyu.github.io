@@ -792,33 +792,6 @@
     font-size: 16px;
 }
 
-.info {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    color: #666;
-}
-
-.profile {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.profile img {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 1px solid #ccc;
-}
-
-.calories {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
 .rating {
     color: #f39c12;
     display: flex;
