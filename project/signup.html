@@ -5,7 +5,7 @@
     <title>Blog</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/thankyou.css">
+    <link rel="stylesheet" href="css/signup.css">
 </head>
 
 <body>
@@ -29,24 +29,58 @@
                 <button id="register">Register</button>
             </div>
         </div>
-        <div class="thank-you-container">
-            <div class="left-side">
-                <img src="image/thankyou.jpg" alt="Taking a photo" />
+
+        <div id="signup-page">
+            <div id="signup-image">
+                <img src="image/signup.jpg" alt="Food Image">
             </div>
-            <div class="right-side">
-                <h1>Thank you Chef</h1>
-                <p>We have sent a verification email to Activate your account</p>
-                <p><strong>Example@Nutritrack.com</strong></p>
-                <p>Didn't receive email? <span class="resend">Resend email</span></p>
 
-                <div class="buttons">
-                    <button class="back-btn">back</button>
-                    <button class="edit-btn">edit profile</button>
-                </div>
+            <div id="signup-form">
+                <h2>Want to join our Family</h2>
 
-                <div class="logo">
-                    <img src="image/logo-icon.png" alt="Logo Icon" class="logo-icon">
-                    <span>Perfect<span style="color: #D25A4C;">Recipe</span></span>
+                <form>
+                    <div class="input-group">
+                        <i class="icon">👤</i>
+                        <input type="text" placeholder="Name">
+                    </div>
+
+                    <div class="input-group">
+                        <i class="icon">📧</i>
+                        <input type="email" placeholder="Example123@gmail.com">
+                    </div>
+
+                    <div class="input-group">
+                        <i class="icon">🔒</i>
+                        <input type="password" placeholder="Password">
+                        <i class="toggle-password">👁️</i>
+                    </div>
+
+                    <div class="input-group">
+                        <i class="icon">🔒</i>
+                        <input type="password" placeholder="Repeat password">
+                    </div>
+
+                    <div class="terms">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">I agree to the <a href="#">terms & policy</a></label>
+                    </div>
+
+                    <button type="submit" class="main-btn">Sign up</button>
+
+                    <div class="or-join">
+                        <p>Or you can join with</p>
+                        <div class="social-buttons">
+                            <button class="google-btn">Sign in with Google</button>
+                            <button class="facebook-btn">Sign in with Facebook</button>
+                        </div>
+                    </div>
+
+                    <p class="login-link">Already have an account? <a href="#">Log in</a></p>
+                </form>
+
+                <div id="signup-logo">
+                    <img src="image/logo-icon.png" alt="PerfectRecipe logo">
+                    <span>Perfect<span style="color: #C66;">Recipe</span></span>
                 </div>
             </div>
         </div>

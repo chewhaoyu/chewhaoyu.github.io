@@ -66,4 +66,6 @@
 .logo {
     margin-top: 50px;
     font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
 }
