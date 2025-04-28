@@ -89,13 +89,17 @@
     margin-right: 5px;
 }
 
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .footer-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px;
-    max-width: 1200px;
-    margin: auto;
 }
 
 .footer-left {
@@ -186,8 +190,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 40px auto 0;
     align-items: center;
 }
 
