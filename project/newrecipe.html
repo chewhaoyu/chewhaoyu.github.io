@@ -51,13 +51,18 @@
                             </div>
                         </div>
                         <div class="thumbnail-upload">
+
+                            <div class="add-photo-box">
+                                <div class="add-photo-content">
+                                    <img src="https://img.icons8.com/ios/50/c25143/camera--v1.png" alt="Add Photo Icon"
+                                        class="camera-icon">
+                                    <p>Add Photo</p>
+                                </div>
+                            </div>
+
                             <div class="thumbnail-box">
                                 <img src="image/new-recipe.jpg" alt="Thumbnail">
                                 <span class="cover-tag">Cover</span>
-                            </div>
-                            <div class="add-photo-box">
-                                <span>➕</span>
-                                <p>Add Photo</p>
                             </div>
                         </div>
                     </div>
@@ -71,47 +76,86 @@
                         <input type="text" placeholder="1 cup corn">
                         <button class="add-btn">+ Add Ingredient</button>
                     </div>
-                    <div class="form-section">
-                        <label>Instructions:</label>
+                    <div class="instructions-container">
+                        <h2>Instructions:</h2>
+                        <p class="instructions-subtext">Tap to edit</p>
+
                         <div class="instruction-step">
-                            <strong>Step 1</strong>
-                            <textarea rows="2" placeholder="Write instruction for step 1"></textarea>
+                            <h3>Step 1</h3>
+                            <div class="instruction-content">
+                                <div class="instruction-image">
+                                    <img src="https://img.icons8.com/ios/50/cccccc/camera--v1.png" alt="Upload Icon">
+                                </div>
+                                <p>In a medium bowl, mix together beans, corn, salsa, taco seasoning</p>
+                            </div>
                         </div>
+
                         <div class="instruction-step">
-                            <strong>Step 2</strong>
-                            <textarea rows="4" placeholder="Write instruction for step 2"></textarea>
+                            <h3>Step 2</h3>
+                            <div class="instruction-content">
+                                <div class="instruction-image">
+                                    <img src="https://img.icons8.com/ios/50/cccccc/camera--v1.png" alt="Upload Icon">
+                                </div>
+                                <p>Preheat a large skillet over medium low heat, sprayed with cooking spray. Place one
+                                    tortilla in the skillet, and scoop 1/2 cup of the filling onto the tortilla in the
+                                    pan. Sprinkle 1/4 cup cheese over the bean mixture, and place second tortilla on top
+                                    of the cheese. Press down lightly... etc.</p>
+                            </div>
                         </div>
-                        <button class="add-btn">+ Add Step</button>
+
+                        <div class="instruction-input">
+                            <input type="text" placeholder="Write Instruction">
+                        </div>
+
+                        <a href="#" class="add-header">+ Header</a>
                     </div>
-                    <div class="form-section">
-                        <label for="servings">Servings:</label>
-                        <input type="text" id="servings" placeholder="How many portions?">
-                    </div>
-                    <div class="form-section time-section">
-                        <div class="time-box">
+                    <div class="recipe-details">
+
+                        <div class="detail-group">
+                            <label for="servings">Servings:</label>
+                            <input type="text" id="servings" placeholder="#">
+                            <p class="subtext">How many portions does this recipe make?</p>
+                        </div>
+
+                        <div class="detail-group">
                             <label>Cooking Time:</label>
-                            <input type="text" placeholder="Hours">
-                            <input type="text" placeholder="Minutes">
+                            <div class="time-inputs">
+                                <input type="text" placeholder="Hours 0">
+                                <input type="text" placeholder="Minutes 0">
+                            </div>
+                            <p class="subtext">How long does it take to cook this recipe?</p>
                         </div>
-                        <div class="time-box">
+
+                        <div class="detail-group">
                             <label>Prep Time:</label>
-                            <input type="text" placeholder="Hours">
-                            <input type="text" placeholder="Minutes">
+                            <div class="time-inputs">
+                                <input type="text" placeholder="Hours 0">
+                                <input type="text" placeholder="Minutes 0">
+                            </div>
+                            <p class="subtext">How long does it take to prepare this recipe?</p>
                         </div>
-                    </div>
-                    <div class="form-section">
-                        <label for="cuisine">Cuisine:</label>
-                        <select id="cuisine">
-                            <option>Italian</option>
-                            <option>Mexican</option>
-                            <option>Asian</option>
-                        </select>
-                    </div>
-                    <div class="form-section">
-                        <label for="collection">Collection:</label>
-                        <select id="collection">
-                            <option>1 Collection Selected</option>
-                        </select>
+
+                        <div class="detail-group">
+                            <label for="cuisine">Cuisine:</label>
+                            <select id="cuisine">
+                                <option>Italian</option>
+                                <option>Mexican</option>
+                                <option>Indian</option>
+                                <option>Japanese</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="detail-group">
+                            <label for="collection">Collection:</label>
+                            <select id="collection">
+                                <option>1 Collection selected</option>
+                                <option>Appetizers</option>
+                                <option>Main Dishes</option>
+                                <option>Desserts</option>
+                            </select>
+                        </div>
+
                     </div>
                 </div>
             </div>
