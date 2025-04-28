@@ -75,7 +75,7 @@
 }
 
 .blog-grid-container {
-    padding: 150px 0px 150px 0px;
+    padding: 150px 0px 100px 0px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -121,4 +121,27 @@
 .blog-desc {
     font-size: 16px;
     color: #555;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    gap: 10px;
+}
+
+.pagination button {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pagination button.active {
+    background-color: white;
+    color: #D25A4C;
+    border-color: #D25A4C;
 }
