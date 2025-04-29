@@ -1,3 +1,9 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 #container {
     margin: 0 auto;
 }
@@ -43,6 +49,11 @@
     font-weight: 500;
     cursor: pointer;
     color: #333;
+}
+
+#nav-menu a {
+    text-decoration: none;
+    color: inherit;
 }
 
 #nav-menu div:hover {
