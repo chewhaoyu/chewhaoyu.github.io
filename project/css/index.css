@@ -137,9 +137,10 @@
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(240px, 1fr));
-    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px 1%;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -148,6 +149,7 @@
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     height: 100%;
+    width: 32%;
 }
 
 .bookmark {
@@ -168,7 +170,8 @@
 
 .card img {
     width: 100%;
-    height: 200px;
+    height: auto;
+    aspect-ratio: 2/1;
     object-fit: cover;
 }
 
@@ -448,7 +451,6 @@
 
     #hero-banner,
     #share-section,
-    #section-trending,
     #section-explore-recipe,
     #blog-section,
     #categories-section {
@@ -499,10 +501,6 @@
         display: none;
     }
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
 
     .blog-grid {
         display: grid;
