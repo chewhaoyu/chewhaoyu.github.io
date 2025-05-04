@@ -3,11 +3,8 @@
     justify-content: center;
     gap: 50px;
     align-items: center;
-    padding: 60px 150px;
-}
-
-#banner-content {
-    padding: 10px;
+    padding: 20px 40px;
+    margin: auto;
 }
 
 #banner-text {
@@ -57,7 +54,7 @@
     justify-content: center;
     gap: 50px;
     align-items: center;
-    padding: 60px 150px;
+    padding: 20px 40px;
 }
 
 #share-image {
@@ -116,7 +113,7 @@
     display: flex;
     flex-direction: column;
     margin: 60px auto;
-    padding: 0 150px;
+    padding: 20px 40px;
 }
 
 #trending-text {
@@ -226,7 +223,7 @@
     justify-content: space-between;
     flex-direction: column;
     gap: 50px;
-    padding: 0px 150px;
+    padding: 20px 40px;
 }
 
 .blog-header {
@@ -285,7 +282,7 @@
     display: flex;
     flex-direction: column;
     margin: 60px auto;
-    padding: 0 150px;
+    padding: 20px 40px;
 }
 
 #explore-text {
@@ -374,10 +371,9 @@
 }
 
 #categories-section {
-    max-width: 1200px;
     margin: 40px auto;
     gap: 50px;
-    padding: 60px 150px;
+    padding: 20px 40px;
 }
 
 .categories-header {
@@ -426,7 +422,9 @@
 }
 
 #partners {
-    padding: 60px 20px 100px 20px;
+    display: flex;
+    padding: 20px 40px;
+    margin: 100px auto;
 }
 
 .partners-container {
