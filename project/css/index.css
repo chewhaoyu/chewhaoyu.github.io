@@ -139,7 +139,6 @@
     border: 1px solid #eee;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    height: 100%;
     width: 32%;
 }
 
@@ -537,19 +536,23 @@
     }
 
     .blog-header h2,
-    .categories-header h2,
-    #trending-text h2,
-    #explore-text h2 {
+    .categories-header h2 {
         font-size: 28px;
         text-align: center;
     }
 
-    #explore-text a,
-    #trending-text a,
     .blog-header a {
         text-align: center;
         display: block;
         margin-top: 10px;
+    }
+
+    #trending-text,
+    #explore-text {
+        font-size: 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .partners-container {
@@ -563,5 +566,27 @@
 
     .category p {
         font-size: 16px;
+    }
+
+    .card {
+        width: 32%;
+    }
+
+    .card-body h3 {
+        font-size: 15px;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .profile img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .calories {
+        padding: 6px;
+        font-size: 12px;
     }
 }
