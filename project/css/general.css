@@ -86,7 +86,7 @@ body {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-#menu-toggle {
+.menu-toggle {
     display: none;
     font-size: 28px;
     cursor: pointer;
@@ -115,7 +115,7 @@ body {
     border-radius: 5px;
 }
 
-.footer {
+#footer {
     background-color: #f5f5f5;
 }
 
@@ -127,13 +127,13 @@ body {
     margin-right: 5px;
 }
 
-.footer-inner {
+#footer-inner {
     max-width: 1200px;
     margin: auto;
     padding: 20px 40px;
 }
 
-.footer-content {
+#footer-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -141,25 +141,25 @@ body {
     padding: 20px 40px;
 }
 
-.footer-left {
+#footer-left {
     flex: 1 1 250px;
 }
 
-.footer-left h2 {
+#footer-left h2 {
     font-size: 22px;
     margin-bottom: 10px;
 }
 
-.footer-left .highlight {
+#footer-left .highlight {
     color: #b84938;
 }
 
-.footer-left p {
+#footer-left p {
     font-size: 14px;
     color: #555;
 }
 
-.footer-links {
+#footer-links {
     display: flex;
     gap: 40px;
     flex: 1 1 400px;
@@ -222,7 +222,7 @@ body {
     cursor: pointer;
 }
 
-.footer-bottom {
+#footer-bottom {
     border-top: 1px solid #ddd;
     margin-top: 40px;
     padding: 20px 40px;
@@ -232,7 +232,7 @@ body {
     align-items: center;
 }
 
-.footer-bottom p {
+#footer-bottom p {
     font-size: 14px;
     color: #888;
     margin: 0;
@@ -260,24 +260,24 @@ body {
     }
 
 
-    .footer-content {
+    #footer-content {
         flex-direction: column;
         gap: 30px;
         padding: 0 10px;
     }
 
-    .footer-left,
-    .footer-links,
+    #footer-left,
+    #footer-links,
     .footer-newsletter {
         flex: 1 1 100%;
     }
 
-    .footer-links {
+    #footer-links {
         flex-direction: column;
         gap: 20px;
     }
 
-    .footer-inner {
+    #footer-inner {
         padding: 0px 20px;
     }
 }
@@ -293,28 +293,28 @@ body {
         display: none;
     }
 
-    .footer-inner {
+    #footer-inner {
         padding: 0px 20px;
     }
 
-    .footer-content {
+    #footer-content {
         flex-direction: column;
         padding: 0;
         gap: 30px;
     }
 
-    .footer-left,
-    .footer-links,
+    #footer-left,
+    #footer-links,
     .footer-newsletter {
         flex: 1 1 100%;
     }
 
-    .footer-links {
+    #footer-links {
         flex-direction: column;
         gap: 20px;
     }
 
-    .footer-bottom {
+    #footer-bottom {
         flex-direction: column;
         align-items: center;
         gap: 20px;
