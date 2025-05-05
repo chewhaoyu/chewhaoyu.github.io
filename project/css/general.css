@@ -254,6 +254,10 @@ body {
         flex-direction: column;
         gap: 20px;
     }
+
+    .footer-inner {
+        padding: 0px 20px;
+    }
 }
 
 @media (max-width: 768px) {

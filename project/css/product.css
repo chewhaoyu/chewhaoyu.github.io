@@ -751,7 +751,6 @@
 
 .grid {
     display: flex;
-    justify-content: space-between;
     gap: 20px 1%;
     flex-wrap: wrap;
 }
@@ -806,10 +805,15 @@
     margin-right: 3px;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 1000px) {
+    #content-wrapper {
+        padding: 20px 20px;
+    }
+}
 
-    #recipe-main {
-        padding: 0 20px;
+@media only screen and (max-width: 768px) {
+    #content-wrapper {
+        padding: 20px 20px;
     }
 
     #path {
@@ -859,7 +863,6 @@
 
     #ingredients-section,
     #instructions-section {
-        padding: 0 20px;
         max-width: 100%;
     }
 
@@ -911,10 +914,16 @@
     #left-column,
     #right-column,
     #nutrition-container,
-    #recent-recipes,
     #tags {
         max-width: 100%;
-        padding: 0 20px;
+    }
+
+    #nutrition-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px;
     }
 
     #conclude {
@@ -928,9 +937,8 @@
     }
 
     #comment-section {
-        width: 90%;
+        width: 100%;
         margin: 40px 0;
-        padding: 0 20px;
     }
 
     .comment.reply {
@@ -1020,13 +1028,28 @@
     }
 
     #section-mightlike {
-        padding: 40px 20px;
+        display: flex;
+        margin: 60px auto;
+        flex-direction: column;
         gap: 30px;
+        max-width: 100%;
     }
 
     .grid {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(140px, 1fr));
-        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 5%;
+        max-width: 100%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+    }
+
+    #recent-recipes {
+        max-width: 100%;
+        margin: 20px;
     }
 }
