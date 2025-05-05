@@ -70,3 +70,34 @@
     display: flex;
     justify-content: flex-end;
 }
+
+@media (max-width: 1000px) {
+    .thank-you-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .right-side {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .left-side {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .left-side img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .right-side {
+        padding: 20px;
+    }
+
+    .logo {
+        display: none;
+    }
+}
