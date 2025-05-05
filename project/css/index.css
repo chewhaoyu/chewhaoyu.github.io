@@ -37,16 +37,6 @@
     line-height: 1.5;
 }
 
-#sign-button {
-    font-size: 18px;
-    background-color: #a15c4d;
-    color: white;
-    padding: 12px 40px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
 #account-info p {
     font-size: 12px;
 }
@@ -105,15 +95,6 @@
     line-height: 1.5;
 }
 
-#share-button {
-    font-size: 18px;
-    background-color: #a15c4d;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
 
 #share-button:hover {
     background-color: #a14b4b;
@@ -366,22 +347,7 @@
     max-width: 80%;
 }
 
-.newsletter-button {
-    padding: 12px 24px;
-    background-color: #c7593f;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-}
 
-.newsletter-button:hover {
-    background-color: #aa4934;
-}
 
 #categories-section {
     display: flex;

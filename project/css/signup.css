@@ -63,11 +63,8 @@
     font-size: 14px;
 }
 
-.main-btn {
+#main-btn {
     width: 100%;
-    padding: 12px;
-    background-color: #C66;
-    color: white;
     border: none;
     border-radius: 6px;
     font-size: 16px;
