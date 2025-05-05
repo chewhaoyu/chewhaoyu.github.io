@@ -1,9 +1,7 @@
 #blog-container {
+    margin: 0 auto;
     max-width: 1200px;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding: 20px;
+    padding: 20px 40px;
 }
 
 #blog-card {

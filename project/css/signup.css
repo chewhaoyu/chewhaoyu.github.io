@@ -1,10 +1,9 @@
 #signup-page {
-    background: #fafafa;
+    margin: 0 auto;
     max-width: 1200px;
-    margin: 50px auto;
+    padding: 20px 40px;
     display: flex;
     align-items: center;
-    gap: 20px;
 }
 
 #signup-image,

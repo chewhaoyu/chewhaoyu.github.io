@@ -1,5 +1,6 @@
 .thank-you-container {
     max-width: 1200px;
+    padding: 20px 40px;
     margin: 50px auto 50px auto;
     display: flex;
     align-items: center;
