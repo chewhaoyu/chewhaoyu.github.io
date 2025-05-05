@@ -83,7 +83,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-size: 25px;
+    font-size: 18px;
     color: #555;
     margin-bottom: 50px;
 }
@@ -138,17 +138,17 @@
 .instruction-step {
     display: flex;
     align-items: flex-start;
-    gap: 15px;
+    gap: 13px;
 }
 
 .instruction-number {
-    width: 35px;
-    height: 35px;
-    min-width: 35px;
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
     background-color: #974E44;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     border-radius: 6px;
     display: flex;
     align-items: center;
@@ -159,7 +159,7 @@
     margin: 0;
     line-height: 1.6;
     color: black;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 #conclude {
@@ -357,8 +357,7 @@
 }
 
 #comment-section {
-    width: 70%;
-    max-width: 700px;
+    max-width: 70%;
     margin: 40px 0px;
     background: #fff;
     border-top: 5px solid #974E44;
@@ -458,7 +457,7 @@
 }
 
 #rate-this-recipe textarea {
-    width: 100%;
+    width: 95%;
     height: 80px;
     padding: 10px;
     font-size: 14px;
@@ -808,6 +807,28 @@
 @media (max-width: 1000px) {
     #content-wrapper {
         padding: 20px 20px;
+        gap: 1%;
+    }
+
+    #conclude-background,
+    #conclude-ingredient-section,
+    #conclude-instructions-section,
+    #conclude-cooking-note,
+    #comment-section,
+    #recent-recipes,
+    #trending-recipes,
+    #related-product,
+    #tags {
+        max-width: 100%;
+    }
+
+
+    .recipe-info h3 {
+        font-size: 20px;
+    }
+
+    .banner-details {
+        font-size: 16px;
     }
 }
 
@@ -918,6 +939,10 @@
         max-width: 100%;
     }
 
+    #right-column {
+        display: block;
+    }
+
     #nutrition-container {
         display: flex;
         align-items: center;
@@ -958,6 +983,10 @@
         display: none;
     }
 
+    #recent-recipes h3 {
+        display: none;
+    }
+
     #related-recipes {
         display: none;
     }
@@ -975,7 +1004,7 @@
     }
 
     #tags {
-        margin: 20px;
+        margin: 20px 0 20px 0;
     }
 
     .comment-footer {
@@ -1050,6 +1079,5 @@
 
     #recent-recipes {
         max-width: 100%;
-        margin: 20px;
     }
 }
