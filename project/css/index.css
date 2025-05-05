@@ -457,6 +457,41 @@
     object-fit: contain;
 }
 
+@media (max-width: 1000px) {
+
+    #hero-banner,
+    #share-section,
+    #section-explore-recipe,
+    #blog-section,
+    #section-trending,
+    #categories-section {
+        padding: 20px 20px;
+    }
+
+    #banner-text h1 {
+        font-size: 40px;
+        max-width: 100%;
+    }
+
+    #share-text h2 {
+        font-size: 32px;
+        max-width: 100%;
+        margin-top: 0%;
+    }
+
+    #banner-text p,
+    #share-text p {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    #trending-text h2,
+    #explore-text h2 {
+        font-size: 32px;
+    }
+
+}
+
 @media (max-width: 768px) {
 
     #hero-banner,
