@@ -86,10 +86,33 @@ body {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-#hamburger-menu {
+#menu-toggle {
     display: none;
     font-size: 28px;
     cursor: pointer;
+}
+
+.menu-toggle {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    z-index: 1001;
+}
+
+.menu {
+    display: none;
+    gap: 1rem;
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.menu-item a:hover {
+    background-color: #555;
+    border-radius: 5px;
 }
 
 .footer {
@@ -270,10 +293,6 @@ body {
         display: none;
     }
 
-    #hamburger-menu {
-        display: block;
-    }
-
     .footer-inner {
         padding: 0px 20px;
     }
@@ -307,4 +326,36 @@ body {
         margin-left: 0;
         margin-right: 10px;
     }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #222;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        padding-top: 5rem;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-item {
+        margin: 1.5rem 0;
+    }
+
+    .menu-item a {
+        font-size: 1.5rem;
+    }
+
+
 }
