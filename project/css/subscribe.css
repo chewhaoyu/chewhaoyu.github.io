@@ -1,0 +1,59 @@
+#subscribe-box {
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+
+#icon-cross {
+    display: flex;
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    color: #000;
+    font-size: 4vw;
+    cursor: pointer;
+}
+
+#subscribe-box img {
+    max-width: 40%;
+}
+
+#subscribe-content {
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 50%;
+}
+
+#subscribe-content h1 {
+    font-size: 5vw;
+    margin-bottom: 20px;
+}
+
+#subscribe-content p {
+    font-size: 1.5vw;
+    color: grey;
+}
+
+#form {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+#subscribe-content input {
+    font-size: 18px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#subscribe-content button {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
