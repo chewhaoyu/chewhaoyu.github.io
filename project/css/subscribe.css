@@ -1,6 +1,9 @@
 #subscribe-box {
-    position: relative;
     display: flex;
+    flex: 1;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
     gap: 20px;
 }
 
@@ -10,12 +13,21 @@
     top: 2vw;
     right: 2vw;
     color: #000;
-    font-size: 4vw;
+    font-size: 40px;
     cursor: pointer;
+    z-index: 1;
+}
+
+#subscribe-box {
+    display: flex;
+    overflow: hidden;
+    object-fit: cover;
 }
 
 #subscribe-box img {
+    object-fit: cover;
     max-width: 40%;
+    height: 50%;
 }
 
 #subscribe-content {
@@ -28,12 +40,12 @@
 }
 
 #subscribe-content h1 {
-    font-size: 5vw;
+    font-size: 60px;
     margin-bottom: 20px;
 }
 
 #subscribe-content p {
-    font-size: 1.5vw;
+    font-size: 20px;
     color: grey;
 }
 

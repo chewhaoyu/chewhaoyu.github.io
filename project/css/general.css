@@ -65,6 +65,11 @@ body {
     gap: 12px;
 }
 
+#account a {
+    text-decoration: none;
+    color: white;
+}
+
 #login,
 .red-button {
     padding: 8px 20px;
@@ -296,8 +301,7 @@ body {
     }
 
     #footer-left,
-    #footer-links,
-    .footer-newsletter {
+    #footer-links {
         flex: 1 1 100%;
     }
 
@@ -308,6 +312,12 @@ body {
 
     #footer-inner {
         padding: 0px 20px;
+    }
+
+    .footer-newsletter form {
+        display: flex;
+        flex-direction: block;
+        gap: 10px;
     }
 }
 
@@ -336,6 +346,12 @@ body {
     #footer-links,
     .footer-newsletter {
         flex: 1 1 100%;
+    }
+
+    .footer-newsletter form {
+        display: flex;
+        flex-direction: block;
+        gap: 10px;
     }
 
     #footer-links {
