@@ -70,7 +70,7 @@
 }
 
 #ingredients-section {
-    max-width: 50%;
+    max-width: 100%;
 }
 
 #ingredients-section h2 {
@@ -243,13 +243,13 @@
 }
 
 #buttons+#conclude-ingredient-section {
-    max-width: 80%;
+    max-width: 100%;
     padding-bottom: 20px;
     border-top: 2px solid black;
 }
 
 #conclude-ingredient-section {
-    max-width: 90%;
+    max-width: 100%;
 }
 
 #conclude-ingredient-section h2 {
