@@ -1,0 +1,6 @@
+#nutrition-container {
+    display: flex;
+    align-items: flex-end;
+    padding: 193px 0px 0 0;
+    max-width: 100%;
+}
