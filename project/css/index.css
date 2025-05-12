@@ -46,7 +46,107 @@
 }
 
 #banner-image {
+    position: relative;
     max-width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.leaf {
+    position: absolute;
+}
+
+.leaf1 {
+    top: 35%;
+    right: 105%;
+    width: 13%;
+}
+
+.leaf2 {
+    top: 10%;
+    left: 95%;
+    width: 10%;
+    transform: scaleX(-1);
+}
+
+.leaf3 {
+    top: 85%;
+    right: 10%;
+    width: 12%;
+    transform: rotate(130deg);
+}
+
+.leaf4 {
+    top: 57%;
+    right: 105%;
+    width: 7%;
+    transform: rotate(240deg);
+
+}
+
+.review-box {
+    position: absolute;
+    bottom: 0%;
+    right: 70%;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    z-index: 2;
+    width: 280px;
+}
+
+.review-content-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.review-content-bot p {
+    font-size: 15px;
+}
+
+.profile-pic {
+    max-width: 50%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.profile-content {
+    max-width: 100%;
+}
+
+.profile-content p {
+    margin-bottom: 0%;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.stars i {
+    color: #e67e22;
+    font-size: 12px;
+}
+
+.stars span {
+    font-size: 12px;
+    color: #888;
+}
+
+.text {
+    font-size: 12px;
+    line-height: 1.4;
 }
 
 #share-section {
@@ -456,6 +556,28 @@
         font-size: 32px;
     }
 
+}
+
+.review-box {
+    width: 220px;
+    padding: 12px 16px;
+    gap: 10px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+}
+
+.stars i,
+.stars span,
+.text,
+.review-content-bot p {
+    font-size: 11px;
+}
+
+.review-content-bot p {
+    font-size: 13px;
 }
 
 @media (max-width: 768px) {
