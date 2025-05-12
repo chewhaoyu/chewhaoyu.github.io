@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 </head>
@@ -56,20 +58,63 @@
             <div id="page-title">
                 <h1>Blog</h1>
             </div>
-            <div id="blog-card">
-                <div class="blog-text">
-                    <p class="blog-date">on September 19, 2032</p>
-                    <h2 class="blog-title">Classic New York-Style Cheesecake Recipe</h2>
-                    <p class="blog-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae enim pharetra, venenatis
-                        nunc
-                        eget, finibus est.
-                        Proin velit erat, ornare elementum dolor gravida, vehicula vestibulum nibh...
-                    </p>
-                    <button id="read-more-btn" class="red-button">Read more →</button>
+            <div class="autoplay">
+                <div class="slide">
+                    <div class="blog-card">
+                        <div class="blog-text">
+                            <p class="blog-date">on September 19, 2032</p>
+                            <h2 class="blog-title">Classic New York-Style Cheesecake Recipe</h2>
+                            <p class="blog-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae enim pharetra,
+                                venenatis
+                                nunc
+                                eget, finibus est.
+                                Proin velit erat, ornare elementum dolor gravida, vehicula vestibulum nibh...
+                            </p>
+                            <button class="read-more-btn red-button">Read more →</button>
+                        </div>
+                        <div class="blog-image">
+                            <img src="image/healthy-diet.jpg" alt="healthy-diet" />
+                        </div>
+                    </div>
                 </div>
-                <div id="blog-image">
-                    <img src="image/healthy-diet.jpg" alt="healthy-diet" />
+                <div class="slide">
+                    <div class="blog-card">
+                        <div class="blog-text">
+                            <p class="blog-date">on September 19, 2032</p>
+                            <h2 class="blog-title">Classic New York-Style Cheesecake Recipe</h2>
+                            <p class="blog-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae enim pharetra,
+                                venenatis
+                                nunc
+                                eget, finibus est.
+                                Proin velit erat, ornare elementum dolor gravida, vehicula vestibulum nibh...
+                            </p>
+                            <button class="read-more-btn red-button">Read more →</button>
+                        </div>
+                        <div class="blog-image">
+                            <img src="image/healthy-diet.jpg" alt="healthy-diet" />
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="blog-card">
+                        <div class="blog-text">
+                            <p class="blog-date">on September 19, 2032</p>
+                            <h2 class="blog-title">Classic New York-Style Cheesecake Recipe</h2>
+                            <p class="blog-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae enim pharetra,
+                                venenatis
+                                nunc
+                                eget, finibus est.
+                                Proin velit erat, ornare elementum dolor gravida, vehicula vestibulum nibh...
+                            </p>
+                            <button class="read-more-btn red-button">Read more →</button>
+                        </div>
+                        <div class="blog-image">
+                            <img src="image/healthy-diet.jpg" alt="healthy-diet" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="blog-grid-container">
@@ -212,7 +257,8 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>
         const toggleButton = document.getElementById("menu-toggle");
         const menu = document.getElementById("mobile-menu");
@@ -225,6 +271,17 @@
             } else {
                 toggleButton.innerHTML = "&#9776;";
             }
+        });
+
+        $(document).ready(function () {
+            $('.autoplay').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                dots: true,
+            });
         });
     </script>
 </body>

@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/newrecipe.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -69,9 +71,8 @@
                                 <button class="small-btn">Change image</button>
                             </div>
                         </div>
-                        <div class="thumbnail-upload">
-
-                            <div class="add-photo-box">
+                        <div class="thumbnail-upload add-remove">
+                            <div class="add-photo-box js-add-slide">
                                 <div class="add-photo-content">
                                     <img src="https://img.icons8.com/ios/50/c25143/camera--v1.png" alt="Add Photo Icon"
                                         class="camera-icon">
@@ -239,6 +240,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>
         const toggleButton = document.getElementById("menu-toggle");
         const menu = document.getElementById("mobile-menu");
@@ -251,6 +254,15 @@
             } else {
                 toggleButton.innerHTML = "&#9776;";
             }
+        });
+        $(document).ready(function () {
+            $('.js-add-slide').on('click', function () {
+                const $clone = $(this).clone();
+                $clone.removeClass('js-add-slide');
+                $clone.find('p').text('New Photo');
+
+                $('.thumbnail-upload').prepend($clone);
+            });
         });
     </script>
 </body>
