@@ -27,7 +27,6 @@
 #subscribe-box img {
     object-fit: cover;
     max-width: 40%;
-    height: 50%;
 }
 
 #subscribe-content {
@@ -68,4 +67,82 @@
     border-radius: 10px;
     cursor: pointer;
     font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+    #subscribe-box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #subscribe-box img {
+        display: none;
+    }
+
+    #subscribe-content {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #form {
+        max-width: 100%;
+        align-items: center;
+    }
+
+    #subscribe-content input,
+    #subscribe-content button {
+        width: 100%;
+    }
+
+    #subscribe-content h1 {
+        font-size: 40px;
+    }
+
+    #subscribe-content p {
+        font-size: 16px;
+    }
+
+    #subscribe-content input {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    #subscribe-content button {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    #icon-cross {
+        font-size: 30px;
+        top: 3vw;
+        right: 3vw;
+    }
+}
+
+@media (max-width: 768px) {
+    #subscribe-content h1 {
+        font-size: 28px;
+    }
+
+    #subscribe-content p {
+        font-size: 14px;
+    }
+
+    #subscribe-content input {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    #subscribe-content button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    #icon-cross {
+        font-size: 24px;
+        top: 4vw;
+        right: 4vw;
+    }
 }
