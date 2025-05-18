@@ -145,12 +145,13 @@
     }
 
     #signup-form {
+        align-items: center;
         max-width: 100%;
         padding: 20px;
     }
 
     .input-group input {
-        width: 90%;
+        width: 73%;
     }
 
     #signup-logo {
