@@ -676,7 +676,8 @@
         }
 
         .card {
-            width: 28%;
+            width: 15%;
+            height: 100%;
         }
 
         .card-body h3 {

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/newrecipe.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="js/general.js">
+    <link rel="stylesheet" href="js/newrecipe.js">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -235,7 +237,7 @@
                     <p>Subscribe to our newsletter to get more free tip</p>
                     <form>
                         <input type="email" placeholder="Enter Your Email">
-                        <button type="submit" class="red-button">Subscribe</button>
+                        <button type="submit" class="red-button"><a href="subscribe.html">Subscribe</a></button>
                     </form>
                 </div>
             </div>
@@ -254,35 +256,6 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script>
-        const toggleButton = document.getElementById("menu-toggle");
-        const menu = document.getElementById("mobile-menu");
-
-        toggleButton.addEventListener("click", () => {
-            menu.classList.toggle("active");
-
-            if (menu.classList.contains("active")) {
-                toggleButton.innerHTML = "&times;";
-            } else {
-                toggleButton.innerHTML = "&#9776;";
-            }
-        });
-        document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
-            toggle.addEventListener('click', () => {
-                toggle.parentElement.classList.toggle('active');
-            });
-        });
-
-        $(document).ready(function () {
-            $('.js-add-slide').on('click', function () {
-                const $clone = $(this).clone();
-                $clone.removeClass('js-add-slide');
-                $clone.find('p').text('New Photo');
-
-                $('.thumbnail-upload').prepend($clone);
-            });
-        });
-    </script>
 </body>
 
 </html>

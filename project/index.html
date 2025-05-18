@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="js/general.js">
+    <link rel="stylesheet" href="js/index.js">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -539,7 +541,7 @@
                     <p>Subscribe to our newsletter to get more free tip</p>
                     <form>
                         <input type="email" placeholder="Enter Your Email">
-                        <button type="submit" class="red-button">Subscribe</button>
+                        <button type="submit" class="red-button"><a href="subscribe.html">Subscribe</a></button>
                     </form>
                 </div>
             </div>
@@ -558,69 +560,6 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script>
-        const toggleButton = document.getElementById("menu-toggle");
-        const menu = document.getElementById("mobile-menu");
-
-        toggleButton.addEventListener("click", () => {
-            toggleButton.classList.toggle("white");
-            menu.classList.toggle("active");
-
-            if (menu.classList.contains("active")) {
-                toggleButton.innerHTML = "&times;"("white");
-            } else {
-                toggleButton.innerHTML = "&#9776;";
-            }
-        });
-        document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
-            toggle.addEventListener('click', () => {
-                toggle.parentElement.classList.toggle('active');
-            });
-        });
-
-        $(document).ready(function () {
-            function initSlickIfMobile() {
-                const $slider = $('.multiple-items');
-
-                if ($(window).width() < 768) {
-                    if (!$slider.hasClass('slick-initialized')) {
-                        $slider.slick({
-                            slidesToShow: 2,
-                            slidesToScroll: 2,
-                            arrows: false,
-                            dots: true,
-                            infinite: false
-                        });
-                    }
-                } else {
-                    if ($slider.hasClass('slick-initialized')) {
-                        $slider.slick('unslick');
-                    }
-                }
-
-                const $slider1 = $('.categories-grid');
-                if ($(window).width() < 768) {
-                    if (!$slider1.hasClass('slick-initialized')) {
-                        $slider1.slick({
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                            arrows: false,
-                            dots: true,
-                            infinite: false
-                        });
-                    }
-                } else {
-                    if ($slider1.hasClass('slick-initialized')) {
-                        $slider1.slick('unslick');
-                    }
-                }
-            }
-
-            initSlickIfMobile();
-            $(window).on('resize', initSlickIfMobile);
-        });
-
-    </script>
 
 </body>
 

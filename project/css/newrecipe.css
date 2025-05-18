@@ -339,3 +339,19 @@ textarea {
         margin-bottom: 10px;
     }
 }
+
+@media (max-width: 600px) {
+    #page-wrapper {
+        padding: 10px;
+    }
+
+    #create-recipe-form {
+        max-width: 100%;
+    }
+
+    .thumbnail-upload .add-photo-box,
+    .thumbnail-upload .thumbnail-box {
+        width: 100%;
+        height: 100px;
+    }
+}

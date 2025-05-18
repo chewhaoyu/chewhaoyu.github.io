@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="js/general.js">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -631,7 +632,7 @@
                     <p>Subscribe to our newsletter to get more free tip</p>
                     <form>
                         <input type="email" placeholder="Enter Your Email">
-                        <button type="submit" class="red-button">Subscribe</button>
+                        <button type="submit" class="red-button"><a href="subscribe.html">Subscribe</a></button>
                     </form>
                 </div>
             </div>
@@ -648,26 +649,9 @@
             </div>
         </div>
     </footer>
-    <script>
-        const toggleButton = document.getElementById("menu-toggle");
-        const menu = document.getElementById("mobile-menu");
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 
-        toggleButton.addEventListener("click", () => {
-            menu.classList.toggle("active");
-
-            if (menu.classList.contains("active")) {
-                toggleButton.innerHTML = "&times;";
-            } else {
-                toggleButton.innerHTML = "&#9776;";
-            }
-        });
-        document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
-            toggle.addEventListener('click', () => {
-                toggle.parentElement.classList.toggle('active');
-            });
-        });
-
-    </script>
 </body>
 
 </html>
