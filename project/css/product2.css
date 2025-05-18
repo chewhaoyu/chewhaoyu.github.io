@@ -1,5 +1,5 @@
 #nutrition-container {
-    display: flex;
+    width: 100%;
     align-items: flex-end;
     padding: 193px 0px 0 0;
     max-width: 100%;

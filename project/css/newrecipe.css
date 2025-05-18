@@ -26,7 +26,7 @@
 
 #create-recipe-form {
     justify-content: center;
-    max-width: 600px;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -218,13 +218,16 @@ select {
     margin: 0;
 }
 
+.instruction-input {
+    width: 100%;
+}
+
 .instruction-input input {
     width: 100%;
-    padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 8px;
-    margin-top: 20px;
-    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 16px;
 }
 
 .add-header {
@@ -237,6 +240,23 @@ select {
 
 .add-header:hover {
     text-decoration: underline;
+}
+
+input,
+select,
+textarea {
+    margin: 0;
+    padding: 0.5em;
+    font: inherit;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.detail-group {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    /* hides accidental overflow */
 }
 
 .recipe-details {
@@ -258,6 +278,7 @@ select {
 
 .detail-group input[type="text"],
 .detail-group select {
+    max-width: 2000px;
     width: 100%;
     padding: 12px;
     font-size: 14px;
@@ -274,12 +295,22 @@ select {
     background-color: #fff;
 }
 
+.detail-group input[type="text"],
+.detail-group input[type="number"],
+.detail-group input,
+.detail-group select {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+}
+
 .subtext {
     font-size: 12px;
     color: #aaa;
 }
 
 .time-inputs {
+    width: 100%;
     display: flex;
     gap: 10px;
 }

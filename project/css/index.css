@@ -323,7 +323,6 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin-bottom: 20px;
 }
 
 .blog-header h2 {
@@ -442,8 +441,6 @@
     font-size: 16px;
     border-radius: 8px;
     border: 1px solid #ccc;
-    width: 300px;
-    max-width: 80%;
 }
 
 
@@ -582,8 +579,7 @@
 
         #hero-banner,
         #share-section,
-        #section-explore-recipe,
-        #blog-section {
+        #section-explore-recipe {
             flex-direction: column;
             padding: 40px 20px;
             gap: 30px;
@@ -642,10 +638,6 @@
             gap: 10px;
         }
 
-        .newsletter-input {
-            width: 100%;
-        }
-
         .newsletter-text {
             font-size: 16px;
             margin: 20px 0;
@@ -655,17 +647,12 @@
             font-size: 24px;
         }
 
-        .blog-header h2,
+
         .categories-header h2 {
             font-size: 28px;
             text-align: center;
         }
 
-        .blog-header a {
-            text-align: center;
-            display: block;
-            margin-top: 10px;
-        }
 
         #trending-text,
         #explore-text {
@@ -689,7 +676,7 @@
         }
 
         .card {
-            width: 32%;
+            width: 28%;
         }
 
         .card-body h3 {
@@ -714,6 +701,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        .category img {
+            width: 180px;
+            height: 180px;
         }
     }
 }
