@@ -34,7 +34,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 70px;
     max-width: 50%;
 }
 
@@ -91,7 +91,7 @@
         align-items: center;
     }
 
-    #subscribe-content input,
+
     #subscribe-content button {
         width: 100%;
     }
