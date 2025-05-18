@@ -227,6 +227,11 @@ body {
     cursor: pointer;
 }
 
+.footer-newsletter a {
+    text-decoration: none;
+    color: white;
+}
+
 #footer-bottom {
     border-top: 1px solid #ddd;
     margin-top: 40px;
