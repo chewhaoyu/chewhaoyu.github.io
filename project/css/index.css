@@ -709,3 +709,10 @@
         }
     }
 }
+
+@media (max-width: 545px) {
+    .category img {
+        width: 150px;
+        height: 150px;
+    }
+}
